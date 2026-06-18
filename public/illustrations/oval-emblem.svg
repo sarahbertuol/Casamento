@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 100" fill="none">
+  <ellipse cx="70" cy="50" rx="60" ry="42" stroke="#7a2530" stroke-width="2.5" />
+  <ellipse cx="70" cy="50" rx="48" ry="32" stroke="#b7ad7c" stroke-width="1.5" />
+  <text x="70" y="58" text-anchor="middle" font-family="serif" font-size="28" fill="#53131d">M&amp;O</text>
+</svg>

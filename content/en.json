@@ -1,0 +1,96 @@
+{
+  "languageToggle": {
+    "label": "Language"
+  },
+  "hero": {
+    "dateLabel": "06.28.25",
+    "locationLabel": "Rosewood - São Paulo"
+  },
+  "welcome": {
+    "title": "Welcome",
+    "lines": [
+      "Dear family and friends,",
+      "We are so happy, and we're preparing every detail with love and care!",
+      "We created this website to share some information about our wedding day.",
+      "Here you can find some important tips.",
+      "We hope you enjoy it, and that this day will be unforgettable for all of us."
+    ],
+    "signatureLabel": "With love,",
+    "conjunction": "and"
+  },
+  "countdown": {
+    "title": "Countdown",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Mins",
+    "todayMessage": "Today is the big day!"
+  },
+  "wedding": {
+    "title": "Wedding",
+    "subtitle": "Ceremony & Reception",
+    "dressCodeLabel": "Dress code",
+    "addressLabel": "Address"
+  },
+  "playlist": {
+    "title": "Get in the mood...",
+    "button": "Check out our playlist!"
+  },
+  "gettingThere": {
+    "title": "Getting there",
+    "tabs": {
+      "car": "By car",
+      "plane": "By plane",
+      "visa": "Brazilian visa"
+    },
+    "content": {
+      "car": "{{INFO_CARRO}}",
+      "plane": "{{INFO_AVIAO}}",
+      "visa": "{{INFO_VISTO}}"
+    }
+  },
+  "lodging": {
+    "title": "Accommodation",
+    "description": "Check out our accommodation suggestions below:",
+    "button": "Hotel suggestions"
+  },
+  "tips": {
+    "title": "Tips",
+    "items": {
+      "whatToDo": "What to do",
+      "hairMakeup": "Hair & Makeup",
+      "shopping": "Shopping",
+      "restaurants": "Restaurants"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "For more information, please contact:"
+  },
+  "rsvp": {
+    "title": "R.S.V.P.",
+    "fullNameLabel": "Full name",
+    "guestNameLabel": "Guest's name",
+    "attendanceLabel": "Please confirm your attendance:",
+    "yes": "Yes",
+    "no": "No",
+    "submit": "Submit",
+    "successMessage": "We received your RSVP, thank you!",
+    "errorMessage": "We couldn't submit this right now. Please try again shortly."
+  },
+  "gifts": {
+    "title": "Gifts",
+    "linkLabel": "Click here"
+  },
+  "message": {
+    "title": "Message to the couple",
+    "fullNameLabel": "Full name",
+    "messageLabel": "Message",
+    "submit": "Submit",
+    "successMessage": "Your message was sent with love, thank you!",
+    "errorMessage": "We couldn't submit this right now. Please try again shortly."
+  },
+  "validation": {
+    "required": "This field is required",
+    "minLength": "Text is too short"
+  }
+}

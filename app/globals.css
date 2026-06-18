@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fcf6f9;
+  --wine-dark: #53131d;
+  --wine: #7a2530;
+  --blush: #f1c2cb;
+  --sage: #b7ad7c;
+  --ink: #3a2a2d;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-wine-dark: var(--wine-dark);
+  --color-wine: var(--wine);
+  --color-blush: var(--blush);
+  --color-sage: var(--sage);
+  --color-ink: var(--ink);
+  --font-script: var(--font-parisienne);
+  --font-body: var(--font-cormorant);
+}
+
+body {
+  background: var(--background);
+  color: var(--ink);
+  font-family: var(--font-body), serif;
+}
+
+.section-title {
+  font-family: var(--font-script), cursive;
+  color: var(--wine);
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  line-height: 1.1;
+}
+
+.label-caps {
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
