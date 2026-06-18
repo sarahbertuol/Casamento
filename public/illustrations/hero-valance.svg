@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 230" fill="none">
+  <!-- left drape -->
+  <path d="M0 0 H120 C 95 28 70 46 46 60 C 24 72 14 86 12 104 C 11 112 11 120 12 128 L 0 128 Z" fill="#53131d" />
+  <path d="M14 6 H100 C 80 26 60 40 40 52 C 24 62 17 72 16 84" stroke="#f1c2cb" stroke-width="2" fill="none" opacity="0.8" />
+  <!-- left cord + tassel -->
+  <path d="M14 104 C 10 130 10 160 14 188" stroke="#53131d" stroke-width="1.5" fill="none" />
+  <circle cx="14" cy="196" r="6" fill="#53131d" />
+  <path d="M9 200 L9 214 M14 202 L14 218 M19 200 L19 214" stroke="#53131d" stroke-width="1.5" />
+
+  <!-- right drape (mirrored) -->
+  <path d="M400 0 H280 C 305 28 330 46 354 60 C 376 72 386 86 388 104 C 389 112 389 120 388 128 L 400 128 Z" fill="#53131d" />
+  <path d="M386 6 H300 C 320 26 340 40 360 52 C 376 62 383 72 384 84" stroke="#f1c2cb" stroke-width="2" fill="none" opacity="0.8" />
+  <!-- right cord + tassel -->
+  <path d="M386 104 C 390 130 390 160 386 188" stroke="#53131d" stroke-width="1.5" fill="none" />
+  <circle cx="386" cy="196" r="6" fill="#53131d" />
+  <path d="M381 200 L381 214 M386 202 L386 218 M391 200 L391 214" stroke="#53131d" stroke-width="1.5" />
+
+  <!-- sage ribbon streamers crossing toward center -->
+  <path d="M150 8 C 170 40 160 70 130 100 C 116 114 110 130 112 150" stroke="#b7ad7c" stroke-width="3" fill="none" />
+  <path d="M250 8 C 230 40 240 70 270 100 C 284 114 290 130 288 150" stroke="#b7ad7c" stroke-width="3" fill="none" />
+  <path d="M150 8 C 170 30 230 30 250 8" stroke="#b7ad7c" stroke-width="3" fill="none" />
+
+  <!-- bow knot -->
+  <circle cx="200" cy="22" r="9" fill="#b7ad7c" />
+</svg>
