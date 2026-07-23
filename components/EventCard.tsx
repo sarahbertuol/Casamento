@@ -39,7 +39,7 @@ export function EventCard() {
           </div>
 
           {/* Dress code — single composite with text overlay */}
-          <div className="relative w-full">
+          <div className="relative w-full mt-4">
             <Image
               src="/inv/traje.png"
               alt="Traje Social Completo"
@@ -53,7 +53,7 @@ export function EventCard() {
                 alt=""
                 width={3017}
                 height={799}
-                className="w-[36%] h-auto mix-blend-multiply"
+                className="w-[50%] md:w-[38%] h-auto mix-blend-multiply"
               />
             </div>
           </div>

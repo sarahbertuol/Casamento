@@ -7,7 +7,7 @@ export function Hero() {
   const { t } = useLocale();
 
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center gap-3 px-2 pt-10 md:pt-16 pb-24 text-center">
+    <section className="relative flex md:min-h-screen flex-col items-center justify-center gap-3 px-2 pt-10 md:pt-16 pb-10 md:pb-24 text-center">
       {/* BF ornate heart crest + BRUNA FAGUNDES combined logo */}
       <Image
         src="/inv/LOGO_BF.png"
