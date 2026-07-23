@@ -1,8 +1,8 @@
 {
-  "languageToggle": { "label": "Language" },
+  "languageToggle": { "label": "PT" },
   "hero": {
-    "eventTypeLabel": "Invites you to celebrate her",
-    "eventName": "Law Graduation",
+    "eventTypeLabel": "Invites you to celebrate her Graduation in",
+    "eventName": "Direito",
     "dateLabel": "September 19, 2026",
     "timeLabel": "at 7:30 PM",
     "locationLabel": "Casa NTX — Porto Alegre"

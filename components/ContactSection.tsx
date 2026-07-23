@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLocale } from "@/lib/i18n";
 import { weddingConfig } from "@/lib/weddingConfig";
 import { SectionReveal } from "./SectionReveal";
@@ -8,11 +9,15 @@ export function ContactSection() {
   const { t } = useLocale();
 
   return (
-    <SectionReveal className="flex flex-col items-center gap-3 py-12 text-center">
+    <SectionReveal className="flex flex-col items-center gap-4 py-14 text-center">
+      <Image src="/inv/fita_ramo_2.png" alt="" width={28} height={60} className="opacity-70" />
       <h2 className="section-title">{t.contact.title}</h2>
-      <p className="text-lg">{t.contact.description}</p>
-      <p className="text-lg font-medium">{weddingConfig.contactName}</p>
-      <p className="text-lg">{weddingConfig.contactPhone}</p>
+      <div className="divider" />
+      <p className="text-sm text-ink-light leading-relaxed max-w-[240px]">
+        {t.contact.description}
+      </p>
+      <p className="text-base font-medium text-ink">{weddingConfig.contactName}</p>
+      <p className="text-base text-ink-light">{weddingConfig.contactPhone}</p>
     </SectionReveal>
   );
 }

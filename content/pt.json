@@ -1,8 +1,8 @@
 {
-  "languageToggle": { "label": "Idioma" },
+  "languageToggle": { "label": "EN" },
   "hero": {
-    "eventTypeLabel": "Convida para celebrar sua",
-    "eventName": "Formatura em Direito",
+    "eventTypeLabel": "Convida Para Celebrar sua Formatura em",
+    "eventName": "Direito",
     "dateLabel": "19 de setembro de 2026",
     "timeLabel": "às 19h30",
     "locationLabel": "Casa NTX — Porto Alegre"

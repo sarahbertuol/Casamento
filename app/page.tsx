@@ -10,7 +10,7 @@ import { ContactSection } from "@/components/ContactSection";
 
 export default function Home() {
   return (
-    <div className="divide-y divide-wine/15">
+    <>
       <Hero />
       <WelcomeMessage />
       <Countdown />
@@ -20,6 +20,6 @@ export default function Home() {
       <RsvpForm />
       <GiftSection />
       <ContactSection />
-    </div>
+    </>
   );
 }

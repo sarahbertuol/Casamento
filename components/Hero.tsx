@@ -9,33 +9,68 @@ export function Hero() {
   const { t } = useLocale();
 
   return (
-    <header className="relative flex flex-col items-center gap-5 pt-16 pb-10 text-center">
-      <div className="absolute top-4 right-0 z-30">
+    <section className="relative flex min-h-screen flex-col items-center justify-center gap-3 px-2 pt-36 pb-24 text-center">
+      {/* Language toggle — positioned clear of the top corner ribbons */}
+      <div className="absolute top-[108px] right-0 z-30">
         <LanguageToggle />
       </div>
 
-      {/* Logo BF — coloque o arquivo em public/logo-bf.png */}
+      {/* BF ornate heart crest */}
       <Image
-        src="/logo-bf.png"
+        src="/inv/LOGO.png"
         alt={weddingConfig.personName}
         width={300}
-        height={200}
-        className="w-[260px] sm:w-[300px] mix-blend-multiply"
+        height={300}
+        className="w-[190px] sm:w-[220px] drop-shadow-sm"
         priority
       />
 
-      <div className="divider" />
+      {/* Name */}
+      <p className="label-caps tracking-[0.22em] text-ink" style={{ fontSize: "0.78rem" }}>
+        {weddingConfig.personName}
+      </p>
 
-      <p className="label-caps text-xs tracking-widest">{t.hero.eventTypeLabel}</p>
-      <h1 className="section-title text-4xl sm:text-5xl">{t.hero.eventName}</h1>
+      {/* Lead-in */}
+      <p className="text-sm italic text-ink-light">
+        {t.hero.eventTypeLabel}
+      </p>
 
-      <div className="divider" />
+      {/* "Direito" — large script centrepiece */}
+      <h1
+        className="section-title leading-none"
+        style={{ fontSize: "clamp(3.5rem, 15vw, 5rem)", textWrap: "balance" }}
+      >
+        {t.hero.eventName}
+      </h1>
 
+      {/* Marquise gem divider */}
+      <Image src="/inv/joia_2.png" alt="" width={22} height={34} className="my-0.5 opacity-70" />
+
+      {/* Date / time / location */}
       <div className="flex flex-col items-center gap-1">
         <p className="label-caps text-sm text-gold">{t.hero.dateLabel}</p>
         <p className="label-caps text-sm text-gold">{t.hero.timeLabel}</p>
-        <p className="label-caps text-xs mt-1">{t.hero.locationLabel}</p>
+        <p className="label-caps mt-1 text-ink-light" style={{ fontSize: "0.65rem", letterSpacing: "0.18em" }}>
+          {t.hero.locationLabel}
+        </p>
       </div>
-    </header>
+
+      {/* Scroll cue */}
+      <div className="absolute bottom-8 flex flex-col items-center gap-0.5 opacity-40 text-ink-light">
+        <span className="label-caps" style={{ fontSize: "0.55rem", letterSpacing: "0.25em" }}>scroll</span>
+        <span className="scroll-bob text-sm">↓</span>
+      </div>
+
+      <style>{`
+        @keyframes scrollBob {
+          0%, 100% { transform: translateY(0); }
+          50%       { transform: translateY(5px); }
+        }
+        .scroll-bob { animation: scrollBob 2s ease-in-out infinite; }
+        @media (prefers-reduced-motion: reduce) {
+          .scroll-bob { animation: none; }
+        }
+      `}</style>
+    </section>
   );
 }

@@ -43,18 +43,18 @@ export function RsvpForm() {
   };
 
   return (
-    <SectionReveal className="flex flex-col items-center gap-6 py-12 text-center">
+    <SectionReveal className="flex flex-col items-center gap-6 py-14 text-center">
+      <Image src="/inv/joia_3_heart.png" alt="" width={50} height={50} className="opacity-80" />
       <h2 className="section-title">{t.rsvp.title}</h2>
-      <Image src="/illustrations/candle.svg" alt="" width={48} height={80} />
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex w-full flex-col gap-4 text-left"
       >
         <label className="flex flex-col gap-1">
-          <span className="label-caps text-xs text-wine">{t.rsvp.fullNameLabel}</span>
+          <span className="label-caps text-[0.65rem] text-wine">{t.rsvp.fullNameLabel}</span>
           <input
             {...register("fullName")}
-            className="rounded border border-wine/40 bg-transparent px-3 py-2"
+            className="rounded border border-wine/40 bg-transparent px-3 py-2.5 text-base focus:border-wine focus:outline-none"
           />
           {errors.fullName && (
             <span className="text-sm text-red-700">{t.validation.required}</span>
@@ -62,22 +62,22 @@ export function RsvpForm() {
         </label>
 
         <label className="flex flex-col gap-1">
-          <span className="label-caps text-xs text-wine">{t.rsvp.guestNameLabel}</span>
+          <span className="label-caps text-[0.65rem] text-wine">{t.rsvp.guestNameLabel}</span>
           <input
             {...register("guestName")}
-            className="rounded border border-wine/40 bg-transparent px-3 py-2"
+            className="rounded border border-wine/40 bg-transparent px-3 py-2.5 text-base focus:border-wine focus:outline-none"
           />
         </label>
 
         <fieldset className="flex flex-col gap-2">
-          <span className="label-caps text-xs text-wine">{t.rsvp.attendanceLabel}</span>
+          <span className="label-caps text-[0.65rem] text-wine">{t.rsvp.attendanceLabel}</span>
           <div className="flex gap-6">
-            <label className="flex items-center gap-2">
-              <input type="radio" value="yes" {...register("attending")} />
+            <label className="flex items-center gap-2 text-base cursor-pointer">
+              <input type="radio" value="yes" {...register("attending")} className="accent-wine" />
               {t.rsvp.yes}
             </label>
-            <label className="flex items-center gap-2">
-              <input type="radio" value="no" {...register("attending")} />
+            <label className="flex items-center gap-2 text-base cursor-pointer">
+              <input type="radio" value="no" {...register("attending")} className="accent-wine" />
               {t.rsvp.no}
             </label>
           </div>
@@ -89,16 +89,16 @@ export function RsvpForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="label-caps mt-2 rounded-full border-2 border-wine px-6 py-2 text-sm text-wine transition-colors hover:bg-wine hover:text-background disabled:opacity-50"
+          className="label-caps mt-2 rounded-full border-2 border-wine px-8 py-3 text-sm text-wine transition-colors hover:bg-wine hover:text-background disabled:opacity-50"
         >
           {t.rsvp.submit}
         </button>
 
         {status === "success" && (
-          <p className="text-sm text-wine">{t.rsvp.successMessage}</p>
+          <p className="text-center text-sm text-wine">{t.rsvp.successMessage}</p>
         )}
         {status === "error" && (
-          <p className="text-sm text-red-700">{t.rsvp.errorMessage}</p>
+          <p className="text-center text-sm text-red-700">{t.rsvp.errorMessage}</p>
         )}
       </form>
     </SectionReveal>

@@ -23,7 +23,7 @@
 body {
   background: var(--background);
   color: var(--ink);
-  font-family: var(--font-body), serif;
+  font-family: var(--font-body), Georgia, serif;
 }
 
 .section-title {
@@ -31,6 +31,7 @@ body {
   color: var(--wine);
   font-size: clamp(2rem, 5vw, 3rem);
   line-height: 1.15;
+  text-wrap: balance;
 }
 
 .label-caps {
@@ -39,12 +40,13 @@ body {
   text-transform: uppercase;
   font-size: 0.75rem;
   color: var(--ink-light);
+  font-family: var(--font-body), Georgia, serif;
 }
 
 .divider {
-  width: 120px;
+  width: 100px;
   height: 1px;
   background: var(--gold);
-  opacity: 0.5;
+  opacity: 0.45;
   margin: 0 auto;
 }
