@@ -24,34 +24,39 @@ export function EventCard() {
             <dt className="label-caps text-gold">{t.event.timeLabel}</dt>
             <dd className="text-base">{weddingConfig.eventTime}</dd>
           </div>
-          {/* Venue — inline: NTX illustration left, text right */}
-          <div className="flex items-center justify-center gap-4 w-full">
+          {/* Venue — vertical: title → NTX illustration → venue text */}
+          <div className="flex flex-col items-center gap-2 w-full">
+            <dt><Image src="/inv/Textos-05.png" alt="o Local" width={3017} height={799} className="mix-blend-multiply w-full max-w-[180px] md:max-w-[240px] h-auto mx-auto" /></dt>
             <Image
               src="/inv/NTX_1a.png"
               alt="Casa NTX"
               width={2187}
               height={1458}
-              className="w-[100px] md:w-[160px] lg:w-[200px] h-auto mix-blend-multiply shrink-0"
+              className="w-full max-w-[280px] md:max-w-[380px] h-auto mix-blend-multiply"
             />
-            <div className="flex flex-col gap-0.5 text-left">
-              <dt><Image src="/inv/Textos-05.png" alt="o Local" width={3017} height={799} className="mix-blend-multiply w-full max-w-[140px] md:max-w-[200px] h-auto" /></dt>
-              <dd className="text-base font-medium">{weddingConfig.venueName}</dd>
-              <dd className="text-sm text-ink-light leading-snug mt-0.5">{weddingConfig.venueAddress}</dd>
-            </div>
+            <dd className="text-base font-medium">{weddingConfig.venueName}</dd>
+            <dd className="text-sm text-ink-light leading-snug">{weddingConfig.venueAddress}</dd>
           </div>
 
-          {/* Dress code — inline: text left, traje figures right */}
-          <div className="flex items-center justify-center gap-4 w-full">
-            <div className="flex flex-col gap-0.5 text-right">
+          {/* Dress code — flanking: traje_1 left | text center | traje_2 right */}
+          <div className="flex items-center justify-center gap-3 w-full">
+            <Image
+              src="/inv/traje_1.png"
+              alt=""
+              width={494}
+              height={803}
+              className="w-[70px] md:w-[110px] h-auto mix-blend-multiply shrink-0"
+            />
+            <div className="flex flex-col gap-0.5 flex-1 text-center">
               <dt className="label-caps text-gold">{t.event.dressCodeLabel}</dt>
-              <dd><Image src="/inv/Textos-06.png" alt="Traje Social Completo" width={3017} height={799} className="mix-blend-multiply w-full max-w-[160px] md:max-w-[220px] h-auto ml-auto" /></dd>
+              <dd><Image src="/inv/Textos-06.png" alt="Traje Social Completo" width={3017} height={799} className="mix-blend-multiply w-full max-w-[160px] md:max-w-[220px] h-auto mx-auto" /></dd>
             </div>
             <Image
-              src="/inv/traje.png"
-              alt="Traje Social Completo"
-              width={1090}
-              height={866}
-              className="w-[100px] md:w-[160px] lg:w-[200px] h-auto mix-blend-multiply shrink-0"
+              src="/inv/traje_2.png"
+              alt=""
+              width={428}
+              height={807}
+              className="w-[70px] md:w-[110px] h-auto mix-blend-multiply shrink-0"
             />
           </div>
         </dl>
