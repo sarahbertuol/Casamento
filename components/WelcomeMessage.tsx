@@ -13,9 +13,9 @@ export function WelcomeMessage() {
       <Image src="/inv/Barrete.png" alt="" width={72} height={56} className="opacity-90" />
       <Image src="/inv/Textos-08.png" alt="Bem-Vindos" width={3017} height={799} className="mix-blend-multiply w-full max-w-[280px] md:max-w-[420px] h-auto" />
       <div className="divider" />
-      <div className="space-y-3 leading-relaxed text-base max-w-[260px] md:max-w-[520px] lg:max-w-[660px]">
+      <div className="space-y-3 leading-relaxed text-base max-w-[320px] md:max-w-[520px] lg:max-w-[660px]">
         {weddingConfig.welcomeLines.map((line, i) => (
-          <p key={i}>{line}</p>
+          <p key={i} className="[text-wrap:pretty]">{line}</p>
         ))}
       </div>
       <p className="text-sm text-ink-light italic">

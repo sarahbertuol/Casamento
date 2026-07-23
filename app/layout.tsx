@@ -26,6 +26,10 @@ const cinzel = Cinzel({
 export const metadata: Metadata = {
   title: weddingConfig.personName,
   description: weddingConfig.eventType,
+  icons: {
+    icon: "/inv/LOGO.png",
+    apple: "/inv/LOGO.png",
+  },
 };
 
 export default function RootLayout({

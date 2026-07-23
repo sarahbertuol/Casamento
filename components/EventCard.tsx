@@ -38,26 +38,24 @@ export function EventCard() {
             <dd className="text-sm text-ink-light leading-snug">{weddingConfig.venueAddress}</dd>
           </div>
 
-          {/* Dress code — flanking: traje_1 left | text center | traje_2 right */}
-          <div className="flex items-center justify-center gap-3 w-full">
+          {/* Dress code — single composite with text overlay */}
+          <div className="relative w-full">
             <Image
-              src="/inv/traje_1.png"
-              alt=""
-              width={494}
-              height={803}
-              className="w-[70px] md:w-[110px] h-auto mix-blend-multiply shrink-0"
+              src="/inv/traje.png"
+              alt="Traje Social Completo"
+              width={1090}
+              height={866}
+              className="w-full h-auto mix-blend-multiply"
             />
-            <div className="flex flex-col gap-0.5 flex-1 text-center">
-              <dt className="label-caps text-gold">{t.event.dressCodeLabel}</dt>
-              <dd><Image src="/inv/Textos-06.png" alt="Traje Social Completo" width={3017} height={799} className="mix-blend-multiply w-full max-w-[160px] md:max-w-[220px] h-auto mx-auto" /></dd>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <Image
+                src="/inv/Textos-06.png"
+                alt=""
+                width={3017}
+                height={799}
+                className="w-[36%] h-auto mix-blend-multiply"
+              />
             </div>
-            <Image
-              src="/inv/traje_2.png"
-              alt=""
-              width={428}
-              height={807}
-              className="w-[70px] md:w-[110px] h-auto mix-blend-multiply shrink-0"
-            />
           </div>
         </dl>
       </div>
