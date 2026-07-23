@@ -28,7 +28,7 @@ export function SideCurtainFrame({ children }: { children: React.ReactNode }) {
           alt=""
           width={220}
           height={220}
-          className="absolute left-0 top-0 w-36 md:w-44 lg:w-52 select-none"
+          className="absolute left-0 top-0 select-none w-[144px] md:w-[176px] lg:w-[200px]"
           priority
         />
         <Image
@@ -36,7 +36,7 @@ export function SideCurtainFrame({ children }: { children: React.ReactNode }) {
           alt=""
           width={220}
           height={220}
-          className="absolute right-0 top-0 w-36 md:w-44 lg:w-52 select-none"
+          className="absolute right-0 top-0 select-none w-[144px] md:w-[176px] lg:w-[200px]"
           style={{ transform: "scaleX(-1)" }}
           priority
         />
@@ -45,20 +45,20 @@ export function SideCurtainFrame({ children }: { children: React.ReactNode }) {
           alt=""
           width={220}
           height={220}
-          className="absolute bottom-0 left-0 w-36 md:w-44 lg:w-52 select-none"
+          className="absolute bottom-0 left-0 select-none w-[144px] md:w-[176px] lg:w-[200px]"
         />
         <Image
           src="/inv/fita_canto_2.png"
           alt=""
           width={220}
           height={220}
-          className="absolute bottom-0 right-0 w-36 md:w-44 lg:w-52 select-none"
+          className="absolute bottom-0 right-0 select-none w-[144px] md:w-[176px] lg:w-[200px]"
           style={{ transform: "scaleX(-1)" }}
         />
       </div>
 
       {/* Scrollable content — wider on desktop */}
-      <div className="relative z-10 mx-auto max-w-[488px] md:max-w-[580px] lg:max-w-[640px] px-6 md:px-10 pb-36">
+      <div className="relative z-10 mx-auto max-w-[488px] md:max-w-[680px] lg:max-w-[900px] px-6 md:px-10 pb-36">
         {children}
       </div>
     </>

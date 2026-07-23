@@ -41,7 +41,7 @@ export function GiftSection() {
         </div>
       )}
 
-      <div className="grid w-full grid-cols-2 gap-3 mt-1">
+      <div className="grid w-full grid-cols-2 md:grid-cols-3 gap-3 mt-1">
         {weddingConfig.gifts.map((gift) => {
           const isCopied = copiedName === gift.name;
           return (
