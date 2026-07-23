@@ -8,28 +8,15 @@ export function Hero() {
 
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center gap-3 px-2 pt-10 md:pt-16 pb-24 text-center">
-      {/* BF ornate heart crest */}
+      {/* BF ornate heart crest + BRUNA FAGUNDES combined logo */}
       <Image
-        src="/inv/LOGO.png"
+        src="/inv/LOGO_BF.png"
         alt={weddingConfig.personName}
-        width={300}
-        height={300}
-        className="w-[190px] sm:w-[220px] drop-shadow-sm"
+        width={1699}
+        height={1167}
+        className="mix-blend-multiply w-[240px] sm:w-[280px] md:w-[340px] h-auto drop-shadow-sm"
         priority
       />
-
-      {/* Name — Cinzel, matching the physical invitation */}
-      <p
-        className="tracking-[0.28em] text-ink uppercase"
-        style={{
-          fontFamily: "var(--font-cinzel)",
-          fontSize: "clamp(1.05rem, 3vw, 1.6rem)",
-          fontWeight: 400,
-          letterSpacing: "0.28em",
-        }}
-      >
-        {weddingConfig.personName}
-      </p>
 
       {/* Convite text — calligraphy image from invitation */}
       <Image
