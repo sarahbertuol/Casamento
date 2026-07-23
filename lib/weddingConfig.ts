@@ -85,6 +85,8 @@ export const weddingConfig = {
   pixMerchantCity: "Porto Alegre",
 
   welcomeLines: [
-    "{{TEXTO A CONFIRMAR — PREENCHER AQUI}}",
+    "Após anos de dedicação, estudo e muito café, chegou o momento mais esperado: me tornar oficialmente Dra. Bruna Fagundes.",
+    "É com imensa alegria que convido você a celebrar comigo essa conquista que só foi possível com o apoio das pessoas que amo.",
+    "Venha compartilhar esse momento especial — afinal, toda causa merece uma boa celebração!",
   ],
 } as const;

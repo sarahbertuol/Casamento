@@ -25,8 +25,16 @@ export function Hero() {
         priority
       />
 
-      {/* Name */}
-      <p className="label-caps tracking-[0.22em] text-ink" style={{ fontSize: "0.78rem" }}>
+      {/* Name — Cinzel, matching the physical invitation */}
+      <p
+        className="tracking-[0.28em] text-ink uppercase"
+        style={{
+          fontFamily: "var(--font-cinzel)",
+          fontSize: "clamp(1.05rem, 3vw, 1.6rem)",
+          fontWeight: 400,
+          letterSpacing: "0.28em",
+        }}
+      >
         {weddingConfig.personName}
       </p>
 

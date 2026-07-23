@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Parisienne, Cormorant_Garamond } from "next/font/google";
+import { Parisienne, Cormorant_Garamond, Cinzel } from "next/font/google";
 import { LocaleProvider } from "@/lib/i18n";
 import { SideCurtainFrame } from "@/components/SideCurtainFrame";
 import { weddingConfig } from "@/lib/weddingConfig";
@@ -17,6 +17,12 @@ const cormorant = Cormorant_Garamond({
   weight: ["400", "500", "600"],
 });
 
+const cinzel = Cinzel({
+  variable: "--font-cinzel",
+  subsets: ["latin"],
+  weight: ["400", "600"],
+});
+
 export const metadata: Metadata = {
   title: weddingConfig.personName,
   description: weddingConfig.eventType,
@@ -30,7 +36,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt"
-      className={`${parisienne.variable} ${cormorant.variable} h-full antialiased`}
+      className={`${parisienne.variable} ${cormorant.variable} ${cinzel.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-background text-ink">
         <LocaleProvider>
