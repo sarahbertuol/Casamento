@@ -25,34 +25,36 @@ html {
   --font-body:   var(--font-cormorant);
 }
 
-body {
-  background: var(--background);
-  color: var(--ink);
-  font-family: var(--font-body), Georgia, serif;
-  font-size: 1.1rem;
-}
+@layer base {
+  body {
+    background: var(--background);
+    color: var(--ink);
+    font-family: var(--font-body), Georgia, serif;
+    font-size: 1.1rem;
+  }
 
-.section-title {
-  font-family: var(--font-script), cursive;
-  color: var(--wine);
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
-  line-height: 1.15;
-  text-wrap: balance;
-}
+  .section-title {
+    font-family: var(--font-script), cursive;
+    color: var(--wine);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1.15;
+    text-wrap: balance;
+  }
 
-.label-caps {
-  font-weight: 600;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  font-size: 0.875rem;
-  color: var(--ink-light);
-  font-family: var(--font-body), Georgia, serif;
-}
+  .label-caps {
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    color: var(--ink-light);
+    font-family: var(--font-body), Georgia, serif;
+  }
 
-.divider {
-  width: 100px;
-  height: 1px;
-  background: var(--gold);
-  opacity: 0.45;
-  margin: 0 auto;
+  .divider {
+    width: 100px;
+    height: 1px;
+    background: var(--gold);
+    opacity: 0.45;
+    margin: 0 auto;
+  }
 }
