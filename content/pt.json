@@ -1,5 +1,7 @@
 {
-  "languageToggle": { "label": "EN" },
+  "languageToggle": {
+    "label": "EN"
+  },
   "hero": {
     "eventTypeLabel": "Convida Para Celebrar sua Formatura em",
     "eventName": "Direito",
@@ -16,7 +18,8 @@
     "days": "Dias",
     "hours": "Horas",
     "minutes": "Mins",
-    "todayMessage": "Hoje é o grande dia!"
+    "todayMessage": "Hoje é o grande dia!",
+    "seconds": "Segs"
   },
   "event": {
     "title": "O Evento",

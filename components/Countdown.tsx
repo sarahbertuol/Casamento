@@ -11,7 +11,8 @@ function getTimeLeft(target: number) {
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
   const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
   const minutes = Math.floor((diff / (1000 * 60)) % 60);
-  return { diff, days, hours, minutes };
+  const seconds = Math.floor((diff / 1000) % 60);
+  return { diff, days, hours, minutes, seconds };
 }
 
 export function Countdown() {
@@ -31,11 +32,12 @@ export function Countdown() {
       {timeLeft.diff <= 0 ? (
         <p className="text-xl text-wine">{t.countdown.todayMessage}</p>
       ) : (
-        <div className="flex gap-8 sm:gap-12">
+        <div className="flex gap-6 sm:gap-10">
           {[
             { value: timeLeft.days, label: t.countdown.days },
             { value: timeLeft.hours, label: t.countdown.hours },
             { value: timeLeft.minutes, label: t.countdown.minutes },
+            { value: timeLeft.seconds, label: t.countdown.seconds },
           ].map((unit) => (
             <div key={unit.label} className="flex flex-col items-center gap-1">
               <span

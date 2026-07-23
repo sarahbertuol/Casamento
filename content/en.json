@@ -1,5 +1,7 @@
 {
-  "languageToggle": { "label": "PT" },
+  "languageToggle": {
+    "label": "PT"
+  },
   "hero": {
     "eventTypeLabel": "Invites you to celebrate her Graduation in",
     "eventName": "Direito",
@@ -16,7 +18,8 @@
     "days": "Days",
     "hours": "Hours",
     "minutes": "Mins",
-    "todayMessage": "Today is the big day!"
+    "todayMessage": "Today is the big day!",
+    "seconds": "Secs"
   },
   "event": {
     "title": "The Event",
