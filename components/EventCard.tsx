@@ -31,7 +31,7 @@ export function EventCard() {
               alt="Casa NTX"
               width={2187}
               height={1458}
-              className="absolute top-1/2 -translate-y-1/2 right-full translate-x-[48px] md:translate-x-[64px] z-50 w-[200px] md:w-[280px] lg:w-[360px] h-auto mix-blend-multiply"
+              className="absolute top-1/2 -translate-y-1/2 right-full md:translate-x-[64px] z-50 w-[48px] md:w-[280px] lg:w-[360px] h-auto mix-blend-multiply"
             />
             <dt><Image src="/inv/Textos-05.png" alt="o Local" width={3017} height={799} className="mix-blend-multiply w-full max-w-[180px] md:max-w-[240px] h-auto mx-auto" /></dt>
             <dd className="text-base font-medium">{weddingConfig.venueName}</dd>
@@ -47,7 +47,7 @@ export function EventCard() {
               alt="Traje Social Completo"
               width={1090}
               height={866}
-              className="absolute top-1/2 -translate-y-1/2 left-full -translate-x-[48px] md:-translate-x-[64px] z-50 w-[180px] md:w-[240px] lg:w-[300px] h-auto mix-blend-multiply"
+              className="absolute top-1/2 -translate-y-1/2 left-full md:-translate-x-[64px] z-50 w-[44px] md:w-[240px] lg:w-[300px] h-auto mix-blend-multiply"
             />
           </div>
         </dl>
