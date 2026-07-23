@@ -24,39 +24,31 @@ export function EventCard() {
             <dt className="label-caps text-gold">{t.event.timeLabel}</dt>
             <dd className="text-base">{weddingConfig.eventTime}</dd>
           </div>
-          {/* Venue — illustration on the left */}
-          <div className="flex items-center gap-4 w-full">
-            <div className="w-[130px] md:w-[180px] shrink-0">
-              <Image
-                src="/inv/NTX_1B.png"
-                alt="Casa NTX"
-                width={2000}
-                height={1572}
-                className="w-full h-auto mix-blend-multiply rounded"
-              />
-            </div>
-            <div className="flex flex-col gap-0.5 flex-1 text-center">
-              <dt><Image src="/inv/Textos-05.png" alt="o Local" width={3017} height={799} className="mix-blend-multiply w-full max-w-[160px] md:max-w-[220px] h-auto mx-auto" /></dt>
-              <dd className="text-base font-medium">{weddingConfig.venueName}</dd>
-              <dd className="text-sm text-ink-light leading-snug mt-1">{weddingConfig.venueAddress}</dd>
-            </div>
+          {/* Venue — text centered; NTX illustration floats left via absolute */}
+          <div className="relative flex flex-col gap-0.5">
+            <Image
+              src="/inv/NTX_1B.png"
+              alt="Casa NTX"
+              width={2000}
+              height={1572}
+              className="absolute top-1/2 -translate-y-1/2 right-full w-[110px] md:w-[150px] h-auto mix-blend-multiply -mr-2"
+            />
+            <dt><Image src="/inv/Textos-05.png" alt="o Local" width={3017} height={799} className="mix-blend-multiply w-full max-w-[180px] md:max-w-[240px] h-auto mx-auto" /></dt>
+            <dd className="text-base font-medium">{weddingConfig.venueName}</dd>
+            <dd className="text-sm text-ink-light leading-snug mt-0.5">{weddingConfig.venueAddress}</dd>
           </div>
 
-          {/* Dress code — illustration on the right */}
-          <div className="flex items-center gap-4 w-full">
-            <div className="flex flex-col gap-0.5 flex-1 text-center">
-              <dt className="label-caps text-gold">{t.event.dressCodeLabel}</dt>
-              <dd><Image src="/inv/Textos-06.png" alt="Traje Social Completo" width={3017} height={799} className="mix-blend-multiply w-full max-w-[200px] md:max-w-[280px] h-auto mx-auto" /></dd>
-            </div>
-            <div className="w-[130px] md:w-[180px] shrink-0">
-              <Image
-                src="/inv/traje.png"
-                alt="Traje Social Completo"
-                width={1090}
-                height={866}
-                className="w-full h-auto mix-blend-multiply"
-              />
-            </div>
+          {/* Dress code — text centered; traje illustration floats right via absolute */}
+          <div className="relative flex flex-col gap-0.5">
+            <dt className="label-caps text-gold">{t.event.dressCodeLabel}</dt>
+            <dd><Image src="/inv/Textos-06.png" alt="Traje Social Completo" width={3017} height={799} className="mix-blend-multiply w-full max-w-[220px] md:max-w-[300px] h-auto mx-auto" /></dd>
+            <Image
+              src="/inv/traje.png"
+              alt="Traje Social Completo"
+              width={1090}
+              height={866}
+              className="absolute top-1/2 -translate-y-1/2 left-full w-[110px] md:w-[150px] h-auto mix-blend-multiply -ml-2"
+            />
           </div>
         </dl>
       </div>
