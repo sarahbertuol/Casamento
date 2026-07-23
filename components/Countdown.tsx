@@ -27,7 +27,7 @@ export function Countdown() {
   return (
     <SectionReveal className="flex flex-col items-center gap-6 py-14 text-center">
       <Image src="/inv/Globo.png" alt="" width={72} height={72} className="opacity-80" />
-      <h2 className="section-title">{t.countdown.title}</h2>
+      <Image src="/inv/Textos-10.png" alt="Contagem Regressiva" width={3017} height={799} className="mix-blend-multiply w-full max-w-[280px] md:max-w-[420px] h-auto" />
       {timeLeft.diff <= 0 ? (
         <p className="text-xl text-wine">{t.countdown.todayMessage}</p>
       ) : (

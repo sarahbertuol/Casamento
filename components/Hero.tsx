@@ -38,26 +38,27 @@ export function Hero() {
         {weddingConfig.personName}
       </p>
 
-      {/* Lead-in */}
-      <p className="text-sm italic text-ink-light">
-        {t.hero.eventTypeLabel}
-      </p>
-
-      {/* "Direito" — large script centrepiece */}
-      <h1
-        className="section-title leading-none"
-        style={{ fontSize: "clamp(3.5rem, 15vw, 5rem)", textWrap: "balance" }}
-      >
-        {t.hero.eventName}
-      </h1>
+      {/* Convite text — calligraphy image from invitation */}
+      <Image
+        src="/inv/Textos-03.png"
+        alt="Convida para celebrar sua Formatura em Direito"
+        width={3922}
+        height={987}
+        className="mix-blend-multiply w-full max-w-[300px] md:max-w-[480px] h-auto"
+      />
 
       {/* Marquise gem divider */}
       <Image src="/inv/joia_2.png" alt="" width={22} height={34} className="my-0.5 opacity-70" />
 
       {/* Date / time / location */}
-      <div className="flex flex-col items-center gap-1">
-        <p className="label-caps text-sm text-gold">{t.hero.dateLabel}</p>
-        <p className="label-caps text-sm text-gold">{t.hero.timeLabel}</p>
+      <div className="flex flex-col items-center gap-2">
+        <Image
+          src="/inv/Textos-04.png"
+          alt="19 de setembro de 2026, às 19:30"
+          width={3017}
+          height={799}
+          className="mix-blend-multiply w-full max-w-[260px] md:max-w-[400px] h-auto"
+        />
         <p className="label-caps mt-1 text-ink-light" style={{ fontSize: "0.65rem", letterSpacing: "0.18em" }}>
           {t.hero.locationLabel}
         </p>

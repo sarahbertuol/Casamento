@@ -11,7 +11,7 @@ export function Lodging() {
   return (
     <SectionReveal className="flex flex-col items-center gap-5 py-14 text-center">
       <Image src="/inv/Chaves.png" alt="" width={56} height={76} className="opacity-85" />
-      <h2 className="section-title">{t.lodging.title}</h2>
+      <Image src="/inv/Textos-14.png" alt="Hospedagem" width={3017} height={799} className="mix-blend-multiply w-full max-w-[280px] md:max-w-[420px] h-auto" />
       <div className="divider" />
       <p className="text-sm text-ink-light">{t.lodging.description}</p>
       <ul className="w-full space-y-2.5">

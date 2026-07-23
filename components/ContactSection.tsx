@@ -11,7 +11,7 @@ export function ContactSection() {
   return (
     <SectionReveal className="flex flex-col items-center gap-4 py-14 text-center">
       <Image src="/inv/fita_ramo_2.png" alt="" width={28} height={60} className="opacity-70" />
-      <h2 className="section-title">{t.contact.title}</h2>
+      <Image src="/inv/Textos-16.png" alt="Mais alguma dúvida?" width={3017} height={799} className="mix-blend-multiply w-full max-w-[280px] md:max-w-[420px] h-auto" />
       <div className="divider" />
       <p className="text-sm text-ink-light leading-relaxed max-w-[240px] md:max-w-[480px]">
         {t.contact.description}

@@ -24,36 +24,37 @@ export function SideCurtainFrame({ children }: { children: React.ReactNode }) {
       {/* Fixed corner ribbons — at viewport corners on all screen sizes */}
       <div className="pointer-events-none fixed inset-0 z-50 overflow-hidden" aria-hidden>
         <Image
-          src="/inv/fita_canto_1.png"
+          src="/inv/CANTONEIRA-17.png"
           alt=""
-          width={220}
-          height={220}
-          className="absolute left-0 top-0 select-none w-[144px] md:w-[176px] lg:w-[200px]"
+          width={1675}
+          height={2601}
+          className="absolute left-0 top-0 select-none mix-blend-multiply w-[144px] md:w-[176px] lg:w-[200px]"
           priority
         />
         <Image
-          src="/inv/fita_canto_1.png"
+          src="/inv/CANTONEIRA-17.png"
           alt=""
-          width={220}
-          height={220}
-          className="absolute right-0 top-0 select-none w-[144px] md:w-[176px] lg:w-[200px]"
+          width={1675}
+          height={2601}
+          className="absolute right-0 top-0 select-none mix-blend-multiply w-[144px] md:w-[176px] lg:w-[200px]"
           style={{ transform: "scaleX(-1)" }}
           priority
         />
         <Image
-          src="/inv/fita_canto_2.png"
+          src="/inv/CANTONEIRA-17.png"
           alt=""
-          width={220}
-          height={220}
-          className="absolute bottom-0 left-0 select-none w-[144px] md:w-[176px] lg:w-[200px]"
+          width={1675}
+          height={2601}
+          className="absolute bottom-0 left-0 select-none mix-blend-multiply w-[144px] md:w-[176px] lg:w-[200px]"
+          style={{ transform: "scaleY(-1)" }}
         />
         <Image
-          src="/inv/fita_canto_2.png"
+          src="/inv/CANTONEIRA-17.png"
           alt=""
-          width={220}
-          height={220}
-          className="absolute bottom-0 right-0 select-none w-[144px] md:w-[176px] lg:w-[200px]"
-          style={{ transform: "scaleX(-1)" }}
+          width={1675}
+          height={2601}
+          className="absolute bottom-0 right-0 select-none mix-blend-multiply w-[144px] md:w-[176px] lg:w-[200px]"
+          style={{ transform: "scale(-1,-1)" }}
         />
       </div>
 

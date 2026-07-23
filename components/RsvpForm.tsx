@@ -47,7 +47,7 @@ export function RsvpForm() {
   return (
     <SectionReveal className="flex flex-col items-center gap-6 py-14 text-center">
       <Image src="/inv/joia_3_heart.png" alt="" width={50} height={50} className="opacity-80" />
-      <h2 className="section-title">{t.rsvp.title}</h2>
+      <Image src="/inv/Textos-07.png" alt="Confirme sua presença aqui." width={4992} height={1061} className="mix-blend-multiply w-full max-w-[300px] md:max-w-[460px] h-auto" />
 
       {sent ? (
         <div className="flex flex-col items-center gap-3 py-4">

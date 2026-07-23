@@ -29,7 +29,7 @@ export function GiftSection() {
   return (
     <SectionReveal className="flex flex-col items-center gap-6 py-14 text-center">
       <Image src="/inv/joia_1.png" alt="" width={52} height={52} className="opacity-80" />
-      <h2 className="section-title">{t.gifts.title}</h2>
+      <Image src="/inv/Textos-15.png" alt="Lista de Presentes" width={3017} height={799} className="mix-blend-multiply w-full max-w-[280px] md:max-w-[420px] h-auto" />
       <div className="divider" />
       <p className="text-sm text-ink-light leading-relaxed max-w-[260px] md:max-w-[480px]">
         {t.gifts.description}

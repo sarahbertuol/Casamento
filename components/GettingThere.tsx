@@ -11,7 +11,7 @@ export function GettingThere() {
   return (
     <SectionReveal className="flex flex-col items-center gap-5 py-14 text-center">
       <Image src="/inv/joia_3_heart.png" alt="" width={46} height={46} className="opacity-75" />
-      <h2 className="section-title">{t.gettingThere.title}</h2>
+      <Image src="/inv/Textos-13.png" alt="Como Chegar" width={3017} height={799} className="mix-blend-multiply w-full max-w-[280px] md:max-w-[420px] h-auto" />
       <div className="divider" />
       <p className="text-sm text-ink-light leading-relaxed max-w-[240px] md:max-w-[480px]">
         {weddingConfig.venueAddress}
