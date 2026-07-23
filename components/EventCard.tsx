@@ -27,11 +27,11 @@ export function EventCard() {
           {/* Venue — text centered; NTX illustration floats left via absolute */}
           <div className="relative flex flex-col gap-0.5">
             <Image
-              src="/inv/NTX_1B.png"
+              src="/inv/NTX_1a.png"
               alt="Casa NTX"
-              width={2000}
-              height={1572}
-              className="absolute top-1/2 -translate-y-1/2 right-full w-[110px] md:w-[150px] h-auto mix-blend-multiply -mr-2"
+              width={2187}
+              height={1458}
+              className="absolute top-1/2 -translate-y-1/2 right-full z-10 w-[200px] md:w-[280px] lg:w-[360px] h-auto mix-blend-multiply"
             />
             <dt><Image src="/inv/Textos-05.png" alt="o Local" width={3017} height={799} className="mix-blend-multiply w-full max-w-[180px] md:max-w-[240px] h-auto mx-auto" /></dt>
             <dd className="text-base font-medium">{weddingConfig.venueName}</dd>
@@ -47,7 +47,7 @@ export function EventCard() {
               alt="Traje Social Completo"
               width={1090}
               height={866}
-              className="absolute top-1/2 -translate-y-1/2 left-full w-[110px] md:w-[150px] h-auto mix-blend-multiply -ml-2"
+              className="absolute top-1/2 -translate-y-1/2 left-full z-10 w-[180px] md:w-[240px] lg:w-[300px] h-auto mix-blend-multiply"
             />
           </div>
         </dl>
