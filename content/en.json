@@ -1,22 +1,15 @@
 {
-  "languageToggle": {
-    "label": "Language"
-  },
+  "languageToggle": { "label": "Language" },
   "hero": {
-    "dateLabel": "06.28.25",
-    "locationLabel": "Rosewood - São Paulo"
+    "eventTypeLabel": "Invites you to celebrate her",
+    "eventName": "Law Graduation",
+    "dateLabel": "September 19, 2026",
+    "timeLabel": "at 7:30 PM",
+    "locationLabel": "Casa NTX — Porto Alegre"
   },
   "welcome": {
     "title": "Welcome",
-    "lines": [
-      "Dear family and friends,",
-      "We are so happy, and we're preparing every detail with love and care!",
-      "We created this website to share some information about our wedding day.",
-      "Here you can find some important tips.",
-      "We hope you enjoy it, and that this day will be unforgettable for all of us."
-    ],
-    "signatureLabel": "With love,",
-    "conjunction": "and"
+    "signatureLabel": "With love,"
   },
   "countdown": {
     "title": "Countdown",
@@ -25,69 +18,42 @@
     "minutes": "Mins",
     "todayMessage": "Today is the big day!"
   },
-  "wedding": {
-    "title": "Wedding",
-    "subtitle": "Ceremony & Reception",
-    "dressCodeLabel": "Dress code",
-    "addressLabel": "Address"
-  },
-  "playlist": {
-    "title": "Get in the mood...",
-    "button": "Check out our playlist!"
+  "event": {
+    "title": "The Event",
+    "dateLabel": "Date",
+    "timeLabel": "Time",
+    "venueLabel": "Venue",
+    "addressLabel": "Address",
+    "dressCodeLabel": "Dress code"
   },
   "gettingThere": {
     "title": "Getting there",
-    "tabs": {
-      "car": "By car",
-      "plane": "By plane",
-      "visa": "Brazilian visa"
-    },
-    "content": {
-      "car": "{{INFO_CARRO}}",
-      "plane": "{{INFO_AVIAO}}",
-      "visa": "{{INFO_VISTO}}"
-    }
+    "mapsButton": "Google Maps",
+    "wazeButton": "Waze"
   },
   "lodging": {
     "title": "Accommodation",
-    "description": "Check out our accommodation suggestions below:",
-    "button": "Hotel suggestions"
-  },
-  "tips": {
-    "title": "Tips",
-    "items": {
-      "whatToDo": "What to do",
-      "hairMakeup": "Hair & Makeup",
-      "shopping": "Shopping",
-      "restaurants": "Restaurants"
-    }
+    "description": "Nearby hotel suggestions:"
   },
   "contact": {
-    "title": "Contact",
-    "description": "For more information, please contact:"
+    "title": "Questions?",
+    "description": "For any questions, please contact our event team:"
   },
   "rsvp": {
-    "title": "R.S.V.P.",
+    "title": "RSVP",
     "fullNameLabel": "Full name",
     "guestNameLabel": "Guest's name",
     "attendanceLabel": "Please confirm your attendance:",
     "yes": "Yes",
     "no": "No",
-    "submit": "Submit",
-    "successMessage": "We received your RSVP, thank you!",
+    "submit": "Confirm",
+    "successMessage": "Attendance confirmed! See you there.",
     "errorMessage": "We couldn't submit this right now. Please try again shortly."
   },
   "gifts": {
     "title": "Gifts",
+    "description": "Your presence is the greatest gift. If you wish to add something:",
     "linkLabel": "Click here"
-  },
-  "message": {
-    "title": "Message to the couple",
-    "fullNameLabel": "Full name",
-    "messageLabel": "Message",
-    "submit": "Submit",
-    "successMessage": "Your message was sent with love, thank you!",
-    "errorMessage": "We couldn't submit this right now. Please try again shortly."
   },
   "validation": {
     "required": "This field is required",

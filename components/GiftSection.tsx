@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useLocale } from "@/lib/i18n";
 import { weddingConfig } from "@/lib/weddingConfig";
 import { SectionReveal } from "./SectionReveal";
@@ -11,7 +10,7 @@ export function GiftSection() {
   return (
     <SectionReveal className="flex flex-col items-center gap-4 py-12 text-center">
       <h2 className="section-title">{t.gifts.title}</h2>
-      <Image src="/illustrations/oval-emblem.svg" alt="" width={140} height={100} />
+      <p className="text-base text-ink-light max-w-xs leading-relaxed">{t.gifts.description}</p>
       <a
         href={weddingConfig.giftsLink}
         target="_blank"

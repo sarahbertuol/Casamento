@@ -1,15 +1,12 @@
 import { Hero } from "@/components/Hero";
 import { WelcomeMessage } from "@/components/WelcomeMessage";
 import { Countdown } from "@/components/Countdown";
-import { WeddingCard } from "@/components/WeddingCard";
-import { PlaylistSection } from "@/components/PlaylistSection";
-import { GettingThereAccordion } from "@/components/GettingThereAccordion";
+import { EventCard } from "@/components/EventCard";
+import { GettingThere } from "@/components/GettingThere";
 import { Lodging } from "@/components/Lodging";
-import { TipsGrid } from "@/components/TipsGrid";
-import { ContactSection } from "@/components/ContactSection";
 import { RsvpForm } from "@/components/RsvpForm";
 import { GiftSection } from "@/components/GiftSection";
-import { MessageForm } from "@/components/MessageForm";
+import { ContactSection } from "@/components/ContactSection";
 
 export default function Home() {
   return (
@@ -17,15 +14,12 @@ export default function Home() {
       <Hero />
       <WelcomeMessage />
       <Countdown />
-      <WeddingCard />
-      <PlaylistSection />
-      <GettingThereAccordion />
+      <EventCard />
+      <GettingThere />
       <Lodging />
-      <TipsGrid />
-      <ContactSection />
       <RsvpForm />
       <GiftSection />
-      <MessageForm />
+      <ContactSection />
     </div>
   );
 }

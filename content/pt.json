@@ -1,22 +1,15 @@
 {
-  "languageToggle": {
-    "label": "Idioma"
-  },
+  "languageToggle": { "label": "Idioma" },
   "hero": {
-    "dateLabel": "28.06.25",
-    "locationLabel": "Rosewood - São Paulo"
+    "eventTypeLabel": "Convida para celebrar sua",
+    "eventName": "Formatura em Direito",
+    "dateLabel": "19 de setembro de 2026",
+    "timeLabel": "às 19h30",
+    "locationLabel": "Casa NTX — Porto Alegre"
   },
   "welcome": {
     "title": "Bem-vindos",
-    "lines": [
-      "Queridos familiares e amigos,",
-      "Estamos muito felizes e preparando cada detalhe com amor e carinho!",
-      "Criamos este site para compartilhar algumas informações do dia do nosso casamento.",
-      "Aqui vocês podem conferir algumas dicas importantes.",
-      "Esperamos que vocês aproveitem e que o grande dia seja inesquecível para todos nós."
-    ],
-    "signatureLabel": "Com carinho,",
-    "conjunction": "e"
+    "signatureLabel": "Com carinho,"
   },
   "countdown": {
     "title": "Contagem Regressiva",
@@ -25,69 +18,42 @@
     "minutes": "Mins",
     "todayMessage": "Hoje é o grande dia!"
   },
-  "wedding": {
-    "title": "Casamento",
-    "subtitle": "Cerimônia e Festa",
-    "dressCodeLabel": "Traje",
-    "addressLabel": "Endereço"
-  },
-  "playlist": {
-    "title": "Para entrar no clima...",
-    "button": "Confira a nossa playlist!"
+  "event": {
+    "title": "O Evento",
+    "dateLabel": "Data",
+    "timeLabel": "Horário",
+    "venueLabel": "Local",
+    "addressLabel": "Endereço",
+    "dressCodeLabel": "Traje"
   },
   "gettingThere": {
     "title": "Como chegar",
-    "tabs": {
-      "car": "De carro",
-      "plane": "De avião",
-      "visa": "Visto brasileiro"
-    },
-    "content": {
-      "car": "{{INFO_CARRO}}",
-      "plane": "{{INFO_AVIAO}}",
-      "visa": "{{INFO_VISTO}}"
-    }
+    "mapsButton": "Google Maps",
+    "wazeButton": "Waze"
   },
   "lodging": {
     "title": "Hospedagem",
-    "description": "Confira abaixo nossas sugestões de hospedagem:",
-    "button": "Sugestões de hotéis"
-  },
-  "tips": {
-    "title": "Dicas",
-    "items": {
-      "whatToDo": "O que fazer",
-      "hairMakeup": "Cabelo & Makeup",
-      "shopping": "Shopping",
-      "restaurants": "Restaurantes"
-    }
+    "description": "Sugestões de hotéis próximos ao local:"
   },
   "contact": {
-    "title": "Contato",
-    "description": "Para mais informações, por favor, entre em contato com:"
+    "title": "Dúvidas?",
+    "description": "Em caso de dúvidas, entre em contato com o cerimonial:"
   },
   "rsvp": {
-    "title": "R.S.V.P.",
+    "title": "Confirme sua presença",
     "fullNameLabel": "Nome completo",
     "guestNameLabel": "Nome do acompanhante",
     "attendanceLabel": "Confirmo minha presença:",
     "yes": "Sim",
     "no": "Não",
-    "submit": "Enviar",
-    "successMessage": "Recebemos sua confirmação, obrigado!",
+    "submit": "Confirmar",
+    "successMessage": "Presença confirmada! Até lá.",
     "errorMessage": "Não foi possível enviar agora. Tente novamente em instantes."
   },
   "gifts": {
     "title": "Presentes",
+    "description": "Sua presença já é o maior presente. Se quiser homenagear de alguma forma:",
     "linkLabel": "Clique aqui"
-  },
-  "message": {
-    "title": "Mensagem aos noivos",
-    "fullNameLabel": "Nome completo",
-    "messageLabel": "Mensagem",
-    "submit": "Enviar",
-    "successMessage": "Mensagem enviada com carinho, obrigado!",
-    "errorMessage": "Não foi possível enviar agora. Tente novamente em instantes."
   },
   "validation": {
     "required": "Campo obrigatório",

@@ -9,45 +9,33 @@ export function Hero() {
   const { t } = useLocale();
 
   return (
-    <header className="relative flex flex-col items-center text-center">
-      <div className="flex w-full justify-end pb-2">
+    <header className="relative flex flex-col items-center gap-5 pt-16 pb-10 text-center">
+      <div className="absolute top-4 right-0 z-30">
         <LanguageToggle />
       </div>
 
-      <div className="relative w-full">
-        <Image
-          src="/illustrations/hero-valance.svg"
-          alt=""
-          width={400}
-          height={230}
-          className="w-full"
-          priority
-        />
-        <Image
-          src="/illustrations/crest.svg"
-          alt=""
-          width={110}
-          height={82}
-          className="absolute left-1/2 top-[58px] -translate-x-1/2"
-        />
-      </div>
-
-      <div className="flex flex-col items-center gap-4 pt-2">
-        <h1 className="section-title text-5xl sm:text-6xl">
-          {weddingConfig.bride} &amp; {weddingConfig.groom}
-        </h1>
-        <Image src="/illustrations/chapel.svg" alt="" width={56} height={70} />
-        <p className="label-caps text-sm text-wine">{t.hero.dateLabel}</p>
-        <p className="label-caps text-sm text-wine">{t.hero.locationLabel}</p>
-      </div>
-
+      {/* Logo BF — coloque o arquivo em public/logo-bf.png */}
       <Image
-        src="/illustrations/bird-wine.svg"
-        alt=""
-        width={40}
-        height={30}
-        className="absolute -bottom-2 right-0"
+        src="/logo-bf.png"
+        alt={weddingConfig.personName}
+        width={300}
+        height={200}
+        className="w-[260px] sm:w-[300px] mix-blend-multiply"
+        priority
       />
+
+      <div className="divider" />
+
+      <p className="label-caps text-xs tracking-widest">{t.hero.eventTypeLabel}</p>
+      <h1 className="section-title text-4xl sm:text-5xl">{t.hero.eventName}</h1>
+
+      <div className="divider" />
+
+      <div className="flex flex-col items-center gap-1">
+        <p className="label-caps text-sm text-gold">{t.hero.dateLabel}</p>
+        <p className="label-caps text-sm text-gold">{t.hero.timeLabel}</p>
+        <p className="label-caps text-xs mt-1">{t.hero.locationLabel}</p>
+      </div>
     </header>
   );
 }

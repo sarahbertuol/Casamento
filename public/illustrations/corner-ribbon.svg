@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 280" fill="none">
+  <!-- back fold -->
+  <path d="M180 0 L180 130 C168 155 150 168 130 182 C108 197 86 210 64 232 L42 255 L20 275 C36 256 56 235 74 212 C92 188 108 168 120 143 C132 118 137 88 150 58 C160 30 172 10 180 0Z" fill="#d4909a" opacity="0.65"/>
+  <!-- main ribbon -->
+  <path d="M180 0 C166 12 150 28 138 56 C126 84 121 114 109 140 C96 168 78 188 59 212 C40 236 20 256 4 272 L0 278 C18 260 36 240 54 218 C72 194 88 174 100 148 C112 122 117 92 130 65 C143 38 162 16 180 0Z" fill="#e8b4bc"/>
+  <!-- highlight stripe -->
+  <path d="M180 0 C170 14 158 32 148 58 C138 84 134 112 122 136" stroke="#f5d0d6" stroke-width="5" fill="none" opacity="0.6" stroke-linecap="round"/>
+  <!-- vine stem -->
+  <path d="M8 274 C14 262 20 252 26 246" stroke="#8fad7c" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M26 246 C32 238 26 230 20 234" stroke="#8fad7c" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- leaves -->
+  <ellipse cx="24" cy="233" rx="8" ry="4.5" fill="#8fad7c" transform="rotate(-42 24 233)" opacity="0.85"/>
+  <ellipse cx="14" cy="251" rx="7" ry="4" fill="#8fad7c" transform="rotate(-22 14 251)" opacity="0.8"/>
+  <ellipse cx="5" cy="266" rx="6" ry="3.5" fill="#8fad7c" transform="rotate(-8 5 266)" opacity="0.75"/>
+  <!-- small berry -->
+  <circle cx="2" cy="276" r="3.5" fill="#b05870" opacity="0.55"/>
+</svg>

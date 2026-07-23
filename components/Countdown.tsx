@@ -15,7 +15,7 @@ function getTimeLeft(target: number) {
 
 export function Countdown() {
   const { t } = useLocale();
-  const target = new Date(weddingConfig.weddingDateTime).getTime();
+  const target = new Date(weddingConfig.eventDateTime).getTime();
   const [timeLeft, setTimeLeft] = useState(() => getTimeLeft(target));
 
   useEffect(() => {

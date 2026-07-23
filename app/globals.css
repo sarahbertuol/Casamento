@@ -1,23 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fcf6f9;
-  --wine-dark: #53131d;
-  --wine: #7a2530;
-  --blush: #f1c2cb;
-  --sage: #b7ad7c;
-  --ink: #3a2a2d;
+  --background: #ece5d8;
+  --wine:       #7b1c2a;
+  --gold:       #8b6e3a;
+  --blush:      #dda8b2;
+  --ink:        #3d2b1a;
+  --ink-light:  #6b5040;
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-wine-dark: var(--wine-dark);
-  --color-wine: var(--wine);
-  --color-blush: var(--blush);
-  --color-sage: var(--sage);
-  --color-ink: var(--ink);
+  --color-wine:       var(--wine);
+  --color-gold:       var(--gold);
+  --color-blush:      var(--blush);
+  --color-ink:        var(--ink);
+  --color-ink-light:  var(--ink-light);
   --font-script: var(--font-parisienne);
-  --font-body: var(--font-cormorant);
+  --font-body:   var(--font-cormorant);
 }
 
 body {
@@ -29,12 +29,22 @@ body {
 .section-title {
   font-family: var(--font-script), cursive;
   color: var(--wine);
-  font-size: clamp(2.25rem, 5vw, 3.25rem);
-  line-height: 1.1;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
 }
 
 .label-caps {
   font-weight: 600;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--ink-light);
+}
+
+.divider {
+  width: 120px;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.5;
+  margin: 0 auto;
 }

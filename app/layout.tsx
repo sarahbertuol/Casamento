@@ -18,8 +18,8 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: `${weddingConfig.bride} & ${weddingConfig.groom}`,
-  description: "Convite de casamento",
+  title: weddingConfig.personName,
+  description: weddingConfig.eventType,
 };
 
 export default function RootLayout({

@@ -1,24 +1,34 @@
-// Edit these values with the couple's real information before launch.
+// Preencha os dados reais antes do lançamento.
 export const weddingConfig = {
-  bride: "Marina",
-  groom: "Olavo",
+  personName: "Bruna Fagundes",
+  eventType: "Formatura em Direito",
 
-  // ISO 8601 datetime, used by the countdown. Keep the timezone offset.
-  weddingDateTime: "2026-12-12T17:00:00-03:00",
+  // ISO 8601 — usado pela contagem regressiva.
+  eventDateTime: "2026-09-19T19:30:00-03:00",
   timeZone: "America/Sao_Paulo",
 
-  ceremonyTime: "17h",
-  ceremonyLocation: "Igreja Nossa Senhora do Brasil",
-  receptionLocation: "Rosewood São Paulo",
-  receptionLocationUrl: "https://maps.google.com/?q=Rosewood+Sao+Paulo",
-  address: "Av. Brigadeiro Faria Lima, 0000 - São Paulo, SP",
-  dressCode: "Esporte fino",
+  eventTime: "19h30",
+  venueName: "Casa NTX",
+  venueAddress: "Av. das Indústrias, 1395 — Porto Alegre, RS",
+  venueMapsUrl: "https://www.google.com/maps/search/Casa+NTX+Av+das+Industrias+1395+Porto+Alegre",
+  venueWazeUrl: "https://waze.com/ul?q=Av.+das+Indústrias,+1395,+Porto+Alegre",
+  dressCode: "Traje Social Completo",
 
-  contactName: "{{CONTATO_NOME}}",
+  // Contato do cerimonial
+  contactName: "{{CONTATO_CERIMONIAL}}",
   contactPhone: "{{CONTATO_TELEFONE}}",
 
-  spotifyPlaylistUrl:
-    process.env.NEXT_PUBLIC_SPOTIFY_PLAYLIST_URL ?? "https://open.spotify.com/playlist/{{PLAYLIST_ID}}",
+  // Hotéis: preencha com os dados reais — cada item vira um card clicável.
+  hotels: [
+    { name: "{{HOTEL 1}}", url: "{{LINK_HOTEL_1}}" },
+    { name: "{{HOTEL 2}}", url: "{{LINK_HOTEL_2}}" },
+    { name: "{{HOTEL 3}}", url: "{{LINK_HOTEL_3}}" },
+  ],
+
   giftsLink: process.env.NEXT_PUBLIC_LINK_PRESENTES ?? "{{LINK_PRESENTES}}",
-  hotelSuggestionsUrl: "{{LINK_HOTEIS}}",
+
+  // Texto de boas-vindas (array de parágrafos — preencher quando disponível).
+  welcomeLines: [
+    "{{TEXTO A CONFIRMAR — PREENCHER AQUI}}",
+  ],
 } as const;
