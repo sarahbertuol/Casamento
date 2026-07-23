@@ -21,7 +21,7 @@ export function GettingThere() {
           href={weddingConfig.venueMapsUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="label-caps rounded-full border-2 border-wine px-5 py-2.5 text-[0.65rem] text-wine transition-colors hover:bg-wine hover:text-background"
+          className="label-caps rounded-full border-2 border-wine px-5 py-2.5 text-[0.65rem] text-wine transition-colors hover:bg-wine hover:text-white"
         >
           {t.gettingThere.mapsButton}
         </a>
@@ -29,7 +29,7 @@ export function GettingThere() {
           href={weddingConfig.venueWazeUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="label-caps rounded-full border-2 border-gold px-5 py-2.5 text-[0.65rem] text-gold transition-colors hover:bg-gold hover:text-background"
+          className="label-caps rounded-full border-2 border-gold px-5 py-2.5 text-[0.65rem] text-gold transition-colors hover:bg-gold hover:text-white"
         >
           {t.gettingThere.wazeButton}
         </a>

@@ -12,7 +12,7 @@ export const weddingConfig = {
   venueWazeUrl: "https://waze.com/ul?q=Av.+das+Indústrias,+1395,+Porto+Alegre",
   dressCode: "Traje Social Completo",
 
-  contactName: "{{CONTATO_CERIMONIAL}}",
+  contactName: "Fabio",
   contactPhone: "(51) 9122-3456",
 
   // WhatsApp para RSVP e presentes
@@ -53,7 +53,7 @@ export const weddingConfig = {
     },
     {
       name: "Jantar Comemorativo",
-      tagline: "Celebrar que a OAB não ganhou",
+      tagline: "Celebrar que passou na prova da OAB",
       price: 200,
       image: "/inv/Globo.png",
     },
@@ -78,6 +78,11 @@ export const weddingConfig = {
   ],
 
   giftsLink: "{{LINK_PRESENTES}}",
+
+  // PIX Copia e Cola — substitua pela chave PIX real
+  pixKey: "{{PIX_KEY}}",
+  pixMerchantName: "Bruna Fagundes",
+  pixMerchantCity: "Porto Alegre",
 
   welcomeLines: [
     "{{TEXTO A CONFIRMAR — PREENCHER AQUI}}",
