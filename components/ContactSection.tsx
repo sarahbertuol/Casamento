@@ -13,7 +13,7 @@ export function ContactSection() {
       <Image src="/inv/fita_ramo_2.png" alt="" width={28} height={60} className="opacity-70" />
       <h2 className="section-title">{t.contact.title}</h2>
       <div className="divider" />
-      <p className="text-sm text-ink-light leading-relaxed max-w-[240px]">
+      <p className="text-sm text-ink-light leading-relaxed max-w-[240px] md:max-w-[480px]">
         {t.contact.description}
       </p>
       <p className="text-base font-medium text-ink">{weddingConfig.contactName}</p>

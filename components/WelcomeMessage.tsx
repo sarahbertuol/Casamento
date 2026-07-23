@@ -13,7 +13,7 @@ export function WelcomeMessage() {
       <Image src="/inv/Barrete.png" alt="" width={72} height={56} className="opacity-90" />
       <h2 className="section-title">{t.welcome.title}</h2>
       <div className="divider" />
-      <div className="space-y-3 leading-relaxed text-base max-w-[260px]">
+      <div className="space-y-3 leading-relaxed text-base max-w-[260px] md:max-w-[520px] lg:max-w-[660px]">
         {weddingConfig.welcomeLines.map((line, i) => (
           <p key={i}>{line}</p>
         ))}

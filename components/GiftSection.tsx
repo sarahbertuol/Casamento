@@ -31,7 +31,7 @@ export function GiftSection() {
       <Image src="/inv/joia_1.png" alt="" width={52} height={52} className="opacity-80" />
       <h2 className="section-title">{t.gifts.title}</h2>
       <div className="divider" />
-      <p className="text-sm text-ink-light leading-relaxed max-w-[260px]">
+      <p className="text-sm text-ink-light leading-relaxed max-w-[260px] md:max-w-[480px]">
         {t.gifts.description}
       </p>
 
