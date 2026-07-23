@@ -44,22 +44,6 @@ export function Hero() {
         </p>
       </div>
 
-      {/* Scroll cue */}
-      <div className="absolute bottom-8 flex flex-col items-center gap-0.5 opacity-40 text-ink-light">
-        <span className="label-caps" style={{ fontSize: "0.55rem", letterSpacing: "0.25em" }}>scroll</span>
-        <span className="scroll-bob text-sm">↓</span>
-      </div>
-
-      <style>{`
-        @keyframes scrollBob {
-          0%, 100% { transform: translateY(0); }
-          50%       { transform: translateY(5px); }
-        }
-        .scroll-bob { animation: scrollBob 2s ease-in-out infinite; }
-        @media (prefers-reduced-motion: reduce) {
-          .scroll-bob { animation: none; }
-        }
-      `}</style>
     </section>
   );
 }
