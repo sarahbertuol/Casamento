@@ -3,18 +3,11 @@
 import Image from "next/image";
 import { useLocale } from "@/lib/i18n";
 import { weddingConfig } from "@/lib/weddingConfig";
-import { LanguageToggle } from "./LanguageToggle";
-
 export function Hero() {
   const { t } = useLocale();
 
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center gap-3 px-2 pt-20 md:pt-28 pb-24 text-center">
-      {/* Language toggle — centred at top on mobile, top-right on desktop */}
-      <div className="absolute top-4 inset-x-0 z-30 flex justify-center md:inset-x-auto md:right-0 md:top-[108px] md:block">
-        <LanguageToggle />
-      </div>
-
+    <section className="relative flex min-h-screen flex-col items-center justify-center gap-3 px-2 pt-10 md:pt-16 pb-24 text-center">
       {/* BF ornate heart crest */}
       <Image
         src="/inv/LOGO.png"
