@@ -40,7 +40,7 @@ export function Countdown() {
             <div key={unit.label} className="flex flex-col items-center gap-1">
               <span
                 className="font-semibold text-wine tabular-nums"
-                style={{ fontSize: "clamp(2.2rem, 9vw, 3rem)", lineHeight: 1 }}
+                style={{ fontSize: "clamp(2.2rem, 9vw, 3.8rem)", lineHeight: 1 }}
               >
                 {String(unit.value).padStart(2, "0")}
               </span>

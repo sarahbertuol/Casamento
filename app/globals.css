@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* Scale all rem values with viewport — mobile unchanged, desktop grows proportionally */
+html {
+  font-size: clamp(16px, 1.5vw, 22px);
+}
+
 :root {
   --background: #ece5d8;
   --wine:       #7b1c2a;
@@ -30,7 +35,7 @@ body {
 .section-title {
   font-family: var(--font-script), cursive;
   color: var(--wine);
-  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
   line-height: 1.15;
   text-wrap: balance;
 }

@@ -16,7 +16,7 @@ export function SideCurtainFrame({ children }: { children: React.ReactNode }) {
 
       {/* Brightening overlay — improves text contrast over the texture */}
       <div
-        className="pointer-events-none fixed inset-0 bg-white/45"
+        className="pointer-events-none fixed inset-0 bg-white/60"
         style={{ zIndex: -5 }}
         aria-hidden
       />
