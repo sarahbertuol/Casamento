@@ -29,14 +29,6 @@ export function SideCurtainFrame({ children }: { children: React.ReactNode }) {
           width={1675}
           height={2601}
           className="absolute left-0 top-0 select-none mix-blend-multiply w-[144px] md:w-[176px] lg:w-[200px]"
-          priority
-        />
-        <Image
-          src="/inv/CANTONEIRA-17.png"
-          alt=""
-          width={1675}
-          height={2601}
-          className="absolute right-0 top-0 select-none mix-blend-multiply w-[144px] md:w-[176px] lg:w-[200px]"
           style={{ transform: "scaleX(-1)" }}
           priority
         />
@@ -45,8 +37,16 @@ export function SideCurtainFrame({ children }: { children: React.ReactNode }) {
           alt=""
           width={1675}
           height={2601}
+          className="absolute right-0 top-0 select-none mix-blend-multiply w-[144px] md:w-[176px] lg:w-[200px]"
+          priority
+        />
+        <Image
+          src="/inv/CANTONEIRA-17.png"
+          alt=""
+          width={1675}
+          height={2601}
           className="absolute bottom-0 left-0 select-none mix-blend-multiply w-[144px] md:w-[176px] lg:w-[200px]"
-          style={{ transform: "scaleY(-1)" }}
+          style={{ transform: "scale(-1,-1)" }}
         />
         <Image
           src="/inv/CANTONEIRA-17.png"
@@ -54,7 +54,7 @@ export function SideCurtainFrame({ children }: { children: React.ReactNode }) {
           width={1675}
           height={2601}
           className="absolute bottom-0 right-0 select-none mix-blend-multiply w-[144px] md:w-[176px] lg:w-[200px]"
-          style={{ transform: "scale(-1,-1)" }}
+          style={{ transform: "scaleY(-1)" }}
         />
       </div>
 
