@@ -7,7 +7,7 @@ export function Hero() {
   const { t } = useLocale();
 
   return (
-    <section className="relative flex h-[100svh] flex-col items-center justify-center gap-8 px-2 pt-10 pb-10 text-center overflow-hidden">
+    <section className="relative flex h-[100svh] flex-col items-center justify-center gap-6 px-2 pt-10 pb-10 text-center overflow-hidden">
       {/* BF ornate heart crest + BRUNA FAGUNDES combined logo */}
       <Image
         src="/inv/LOGO_BF.png"
@@ -16,6 +16,15 @@ export function Hero() {
         height={1167}
         className="mix-blend-multiply w-[240px] sm:w-[280px] md:w-[340px] h-auto drop-shadow-sm"
         priority
+      />
+
+      {/* Convite text — calligraphy image from invitation */}
+      <Image
+        src="/inv/Textos-03.png"
+        alt="Convida para celebrar sua Formatura em Direito"
+        width={3922}
+        height={987}
+        className="mix-blend-multiply w-full max-w-[300px] md:max-w-[480px] h-auto"
       />
 
       {/* Date / time / location */}
