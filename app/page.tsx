@@ -2,6 +2,7 @@ import { Hero } from "@/components/Hero";
 import { WelcomeMessage } from "@/components/WelcomeMessage";
 import { Countdown } from "@/components/Countdown";
 import { EventCard } from "@/components/EventCard";
+import { TrajeSection } from "@/components/TrajeSection";
 import { GettingThere } from "@/components/GettingThere";
 import { Lodging } from "@/components/Lodging";
 import { RsvpForm } from "@/components/RsvpForm";
@@ -15,6 +16,7 @@ export default function Home() {
       <WelcomeMessage />
       <Countdown />
       <EventCard />
+      <TrajeSection />
       <GettingThere />
       <Lodging />
       <RsvpForm />

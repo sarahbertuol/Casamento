@@ -32,30 +32,10 @@ export function EventCard() {
               alt="Casa NTX"
               width={2187}
               height={1458}
-              className="w-full max-w-[280px] md:max-w-[380px] h-auto mix-blend-multiply"
+              className="w-full max-w-[340px] md:max-w-[460px] h-auto mix-blend-multiply"
             />
             <dd className="text-base font-medium">{weddingConfig.venueName}</dd>
             <dd className="text-sm text-ink-light leading-snug">{weddingConfig.venueAddress}</dd>
-          </div>
-
-          {/* Dress code — single composite with text overlay */}
-          <div className="relative w-full mt-4">
-            <Image
-              src="/inv/traje.png"
-              alt="Traje Social Completo"
-              width={1090}
-              height={866}
-              className="w-full h-auto mix-blend-multiply"
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Image
-                src="/inv/Textos-06.png"
-                alt=""
-                width={3017}
-                height={799}
-                className="w-[50%] md:w-[38%] h-auto mix-blend-multiply"
-              />
-            </div>
           </div>
         </dl>
       </div>

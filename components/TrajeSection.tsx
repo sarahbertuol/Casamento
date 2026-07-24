@@ -1,0 +1,27 @@
+"use client";
+
+import Image from "next/image";
+import { SectionReveal } from "./SectionReveal";
+
+export function TrajeSection() {
+  return (
+    <SectionReveal className="py-8">
+      <div className="flex flex-col items-center gap-4 rounded-lg border border-gold/40 px-6 py-8 text-center">
+        <Image
+          src="/inv/Textos-06.png"
+          alt="Traje Social Completo"
+          width={3017}
+          height={799}
+          className="mix-blend-multiply w-full max-w-[240px] md:max-w-[340px] h-auto"
+        />
+        <Image
+          src="/inv/traje.png"
+          alt="Traje Social Completo"
+          width={1090}
+          height={866}
+          className="w-full h-auto mix-blend-multiply"
+        />
+      </div>
+    </SectionReveal>
+  );
+}

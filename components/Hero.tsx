@@ -18,17 +18,8 @@ export function Hero() {
         priority
       />
 
-      {/* Convite text — calligraphy image from invitation */}
-      <Image
-        src="/inv/Textos-03.png"
-        alt="Convida para celebrar sua Formatura em Direito"
-        width={3922}
-        height={987}
-        className="mix-blend-multiply w-full max-w-[300px] md:max-w-[480px] h-auto"
-      />
-
       {/* Marquise gem divider */}
-      <Image src="/inv/joia_2.png" alt="" width={22} height={34} className="my-0.5 opacity-70" />
+      <Image src="/inv/joia_2.png" alt="" width={22} height={34} className="my-2 opacity-70" />
 
       {/* Date / time / location */}
       <div className="flex flex-col items-center gap-2">
