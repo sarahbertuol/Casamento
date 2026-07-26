@@ -25,8 +25,10 @@ export function Lodging() {
             >
               <span>{hotel.name}</span>
               {"stars" in hotel && typeof hotel.stars === "number" && (
-                <span className="text-xs tracking-tight" style={{ color: "#9A7A2A", letterSpacing: "0.05em" }}>
-                  {"★".repeat(hotel.stars)}
+                <span className="flex items-center gap-0.5 mt-0.5">
+                  {Array.from({ length: hotel.stars }).map((_, i) => (
+                    <Image key={i} src="/inv/estrela.png" alt="" width={52} height={52} className="w-3.5 h-3.5 opacity-80" />
+                  ))}
                 </span>
               )}
             </a>
