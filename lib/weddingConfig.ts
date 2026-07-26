@@ -21,19 +21,23 @@ export const weddingConfig = {
   hotels: [
     {
       name: "Ibis Porto Alegre Aeroporto",
-      url: "https://maps.app.goo.gl/8aErL4S9n77AjUES8",
+      stars: 3,
+      url: "https://all.accor.com/hotel/5670/index.pt-br.shtml?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleATQpJdwZG9mAmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp1z52yNdb96Lb6W9BPjN5Y0I4LoFly-IC09W1Y-36Ayx0YIhieuqfm4EKrpS_aem_Szma6hacXczR1zYuqza2FA",
     },
     {
       name: "Novotel Porto Alegre Aeroporto",
-      url: "https://maps.app.goo.gl/s1TjCzYSDreSZ25n6",
+      stars: 4,
+      url: "https://all.accor.com/booking/pt-br/novotel/hotel/6665?destination=porto-alegre-rs-brazil&compositions=1&dateIn=2026-07-24&dateOut=2026-07-25&nights=1&hideWDR=false&accessibleRoom=false",
     },
     {
       name: "Hotel Deville Prime Porto Alegre",
-      url: "https://maps.app.goo.gl/9As9NU7WPHM72zdp7",
+      stars: 4,
+      url: "https://www.deville.com.br/hotel-deville-prime-porto-alegre",
     },
     {
       name: "Hotel Intercity Aeroporto Porto Alegre",
-      url: "https://maps.app.goo.gl/JyYrhr85n1HU7Q2c8",
+      stars: 4,
+      url: "https://www.intercityhoteis.com.br/hotel-porto-alegre/hotel-intercity-aeroporto-porto-alegre?gad_source=1&gad_campaignid=21054236091&gbraid=0AAAAADs9EFNI52TQBAb3_YtswO5hejvBF&gclid=CjwKCAjwmozTBhAeEiwAkEGZzhLZt9j7wCpuXQPaHO7O87zB4EWQukN5HJ5bJJphe7JfddVd48y6tRoC-LYQAvD_BwE",
     },
   ],
 
@@ -85,8 +89,10 @@ export const weddingConfig = {
   pixMerchantCity: "Porto Alegre",
 
   welcomeLines: [
-    "Após anos de dedicação, estudo e muito café, chegou o momento mais esperado: me tornar oficialmente Dra. Bruna Fagundes.",
-    "É com imensa alegria que convido você a celebrar comigo essa conquista que só foi possível com o apoio das pessoas que amo.",
-    "Venha compartilhar esse momento especial — afinal, toda causa merece uma boa celebração!",
+    "Queridos familiares e amigos,",
+    "É com imensa alegria que compartilho com vocês este momento tão especial da minha vida: a celebração da minha formatura em Direito.",
+    "Criei este espaço para reunir todas as informações importantes sobre o grande dia, para que possamos viver essa conquista da melhor forma possível. Aqui vocês encontrarão detalhes sobre a festa e outras orientações.",
+    "E, claro, caso precisem de qualquer informação adicional, estarei à disposição para ajudar.",
+    "Espero celebrar essa conquista ao lado de cada um de vocês!",
   ],
 } as const;

@@ -31,9 +31,11 @@ export function GiftSection() {
       <Image src="/inv/joia_1.png" alt="" width={52} height={52} className="opacity-80" />
       <Image src="/inv/Textos-15.png" alt="Lista de Presentes" width={3017} height={799} className="mix-blend-multiply w-full max-w-[280px] md:max-w-[420px] h-auto" />
       <div className="divider" />
-      <p className="text-sm text-ink-light leading-relaxed max-w-[260px] md:max-w-[480px]">
-        {t.gifts.description}
-      </p>
+      <div className="flex flex-col gap-3 text-sm text-ink-light leading-relaxed max-w-[260px] md:max-w-[480px]">
+        {t.gifts.description.split("\n\n").map((para, i) => (
+          <p key={i} className="[text-wrap:pretty]">{para}</p>
+        ))}
+      </div>
 
       {copiedName && (
         <div className="w-full rounded-lg border border-wine/30 bg-wine/10 px-4 py-3 text-sm text-wine">

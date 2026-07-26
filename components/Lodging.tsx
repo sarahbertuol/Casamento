@@ -21,9 +21,14 @@ export function Lodging() {
               href={hotel.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 rounded border border-gold/40 px-6 py-3 text-base text-ink transition-all hover:border-wine hover:text-wine"
+              className="flex flex-col items-center justify-center gap-0.5 rounded border border-gold/40 px-6 py-3 text-base text-ink transition-all hover:border-wine hover:text-wine"
             >
-              {hotel.name}
+              <span>{hotel.name}</span>
+              {"stars" in hotel && typeof hotel.stars === "number" && (
+                <span className="text-xs tracking-tight" style={{ color: "#9A7A2A", letterSpacing: "0.05em" }}>
+                  {"★".repeat(hotel.stars)}
+                </span>
+              )}
             </a>
           </li>
         ))}

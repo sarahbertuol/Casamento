@@ -36,11 +36,11 @@
   },
   "lodging": {
     "title": "Hospedagem",
-    "description": "Sugestões de hotéis próximos ao local:"
+    "description": "Para maior comodidade, caso desejem se hospedar em Porto Alegre, selecionei abaixo algumas opções de hospedagem próximas ao local da festa:"
   },
   "contact": {
     "title": "Dúvidas?",
-    "description": "Em caso de dúvidas, entre em contato com o cerimonial:"
+    "description": "Em caso de dúvidas sobre o evento, por gentileza, entre em contato com:"
   },
   "rsvp": {
     "title": "Confirme sua presença",
@@ -55,7 +55,7 @@
   },
   "gifts": {
     "title": "Presentes",
-    "description": "Sua presença já é o maior presente. Se quiser homenagear de alguma forma, clique no presente de sua escolha para copiar o código PIX.",
+    "description": "Sua presença é o presente mais importante para mim.\n\nAinda assim, se desejar me presentear, fique à vontade para escolher a forma que preferir. As sugestões abaixo são apenas uma forma simbólica de demonstrar seu carinho. Basta selecionar a opção desejada para copiar a chave Pix correspondente.",
     "linkLabel": "Clique aqui"
   },
   "validation": {

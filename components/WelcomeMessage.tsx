@@ -18,9 +18,10 @@ export function WelcomeMessage() {
           <p key={i} className="[text-wrap:pretty]">{line}</p>
         ))}
       </div>
-      <p className="text-sm text-ink-light italic">
-        {t.welcome.signatureLabel} {weddingConfig.personName}
-      </p>
+      <div className="flex flex-col items-center gap-0.5 text-sm text-ink-light italic">
+        <span>{t.welcome.signatureLabel}</span>
+        <span>{weddingConfig.personName}</span>
+      </div>
     </SectionReveal>
   );
 }

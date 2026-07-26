@@ -41,8 +41,8 @@ export function Countdown() {
           ].map((unit) => (
             <div key={unit.label} className="flex flex-col items-center gap-1">
               <span
-                className="font-semibold text-wine tabular-nums"
-                style={{ fontSize: "clamp(2.2rem, 9vw, 3.8rem)", lineHeight: 1 }}
+                className="font-semibold tabular-nums"
+                style={{ fontSize: "clamp(2.2rem, 9vw, 3.8rem)", lineHeight: 1, color: "#55381a" }}
               >
                 {String(unit.value).padStart(2, "0")}
               </span>
