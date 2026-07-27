@@ -29,7 +29,7 @@ export function GiftSection() {
   return (
     <SectionReveal className="flex flex-col items-center gap-6 py-14 text-center">
       <Image src="/inv/joia_1.png" alt="" width={52} height={52} className="opacity-80" />
-      <Image src="/inv/Textos-sugestao.png" alt="Sugestão de Presentes" width={3017} height={799} className="mix-blend-multiply w-full max-w-[320px] md:max-w-[480px] h-auto" />
+      <Image src="/inv/textos-sugestao.png" alt="Sugestão de Presentes" width={3017} height={799} className="mix-blend-multiply w-full max-w-[320px] md:max-w-[480px] h-auto" />
       <div className="divider" />
       <div className="flex flex-col gap-3 text-base text-ink-light leading-relaxed max-w-[260px] md:max-w-[480px]">
         {t.gifts.description.split("\n\n").map((para, i) => (

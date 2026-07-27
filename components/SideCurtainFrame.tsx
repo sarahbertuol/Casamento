@@ -59,7 +59,7 @@ export function SideCurtainFrame({ children }: { children: React.ReactNode }) {
       </div>
 
       {/* Scrollable content — wider on desktop */}
-      <div className="relative z-10 mx-auto max-w-[488px] md:max-w-[680px] lg:max-w-[900px] px-5 md:px-14 pb-36">
+      <div className="relative z-10 mx-auto max-w-[488px] md:max-w-[680px] lg:max-w-[900px] px-8 md:px-14 pb-36">
         {children}
       </div>
     </>
