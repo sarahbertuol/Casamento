@@ -22,10 +22,10 @@ export function TrajeSection() {
           className="mix-blend-multiply w-full max-w-[280px] md:max-w-[420px] h-auto"
         />
         <Image
-          src="/inv/traje_novo.png"
+          src="/inv/traje.png"
           alt="Traje Social Completo"
-          width={2000}
-          height={1000}
+          width={1090}
+          height={866}
           className="w-full h-auto mix-blend-multiply"
         />
       </div>
