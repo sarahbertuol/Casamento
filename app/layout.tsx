@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Parisienne, Cormorant_Garamond, Cinzel } from "next/font/google";
 import { LocaleProvider } from "@/lib/i18n";
 import { SideCurtainFrame } from "@/components/SideCurtainFrame";
-import { PasswordGate } from "@/components/PasswordGate";
 import { weddingConfig } from "@/lib/weddingConfig";
 import "./globals.css";
 
@@ -45,9 +44,7 @@ export default function RootLayout({
     >
       <body className="min-h-full bg-background text-ink">
         <LocaleProvider>
-          <PasswordGate>
-            <SideCurtainFrame>{children}</SideCurtainFrame>
-          </PasswordGate>
+          <SideCurtainFrame>{children}</SideCurtainFrame>
         </LocaleProvider>
       </body>
     </html>
