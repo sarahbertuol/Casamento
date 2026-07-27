@@ -29,7 +29,7 @@ export function GiftSection() {
   return (
     <SectionReveal className="flex flex-col items-center gap-6 py-14 text-center">
       <Image src="/inv/joia_1.png" alt="" width={52} height={52} className="opacity-80" />
-      <Image src="/inv/Textos-15.png" alt="Lista de Presentes" width={3017} height={799} className="mix-blend-multiply w-full max-w-[280px] md:max-w-[420px] h-auto" />
+      <Image src="/inv/Textos-sugestao.png" alt="Sugestão de Presentes" width={3017} height={799} className="mix-blend-multiply w-full max-w-[320px] md:max-w-[480px] h-auto" />
       <div className="divider" />
       <div className="flex flex-col gap-3 text-base text-ink-light leading-relaxed max-w-[260px] md:max-w-[480px]">
         {t.gifts.description.split("\n\n").map((para, i) => (
@@ -39,7 +39,7 @@ export function GiftSection() {
 
       {copiedName && (
         <div className="w-full rounded-lg border border-wine/30 bg-wine/10 px-4 py-3 text-sm text-wine">
-          ✓ PIX copiado! Cole no app do banco — R$ {copiedGift?.price}
+          ✓ PIX copiado! Cole no app do banco — R$ {copiedGift?.price.toLocaleString("pt-BR")}
         </div>
       )}
 
@@ -67,7 +67,7 @@ export function GiftSection() {
               <p className="text-xs font-semibold text-ink leading-tight">{gift.name}</p>
               <p className="text-[0.6rem] italic text-ink-light leading-tight">{gift.tagline}</p>
               <p className="label-caps mt-auto text-[0.7rem] text-wine">
-                {isCopied ? "✓ Copiado!" : `R$ ${gift.price}`}
+                {isCopied ? "✓ Copiado!" : `R$ ${gift.price.toLocaleString("pt-BR")}`}
               </p>
             </button>
           );
