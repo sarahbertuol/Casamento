@@ -13,7 +13,7 @@ export function Lodging() {
       <Image src="/inv/Chaves.png" alt="" width={56} height={76} className="opacity-85" />
       <Image src="/inv/Textos-14.png" alt="Hospedagem" width={3017} height={799} className="mix-blend-multiply w-full max-w-[280px] md:max-w-[420px] h-auto" />
       <div className="divider" />
-      <p className="text-sm text-ink-light">{t.lodging.description}</p>
+      <p className="text-base text-ink-light leading-relaxed">{t.lodging.description}</p>
       <ul className="w-full space-y-2.5">
         {weddingConfig.hotels.map((hotel) => (
           <li key={hotel.name}>

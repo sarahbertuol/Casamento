@@ -13,7 +13,7 @@ export function GettingThere() {
       <Image src="/inv/joia_3_heart.png" alt="" width={46} height={46} className="opacity-75" />
       <Image src="/inv/Textos-13.png" alt="Como Chegar" width={3017} height={799} className="mix-blend-multiply w-full max-w-[280px] md:max-w-[420px] h-auto" />
       <div className="divider" />
-      <p className="text-sm text-ink-light leading-relaxed max-w-[240px] md:max-w-[480px]">
+      <p className="text-base text-ink-light leading-relaxed max-w-[240px] md:max-w-[480px]">
         {weddingConfig.venueAddress}
       </p>
       <div className="flex gap-3">
