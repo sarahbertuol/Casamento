@@ -1,46 +1,17 @@
-"use client";
-
 import Image from "next/image";
-import { useLocale } from "@/lib/i18n";
 import { weddingConfig } from "@/lib/weddingConfig";
-export function Hero() {
-  const { t } = useLocale();
 
+export function Hero() {
   return (
-    <section className="relative flex h-[100svh] flex-col items-center justify-center gap-6 px-2 pt-10 pb-10 text-center overflow-hidden">
-      {/* BF ornate heart crest + BRUNA FAGUNDES combined logo */}
+    <section className="relative flex h-[100svh] flex-col items-center justify-center px-4 py-8 overflow-hidden">
       <Image
-        src="/inv/LOGO_BF.png"
+        src="/inv/hero-convite.png"
         alt={weddingConfig.personName}
-        width={1699}
-        height={1167}
-        className="mix-blend-multiply w-[240px] sm:w-[280px] md:w-[340px] h-auto drop-shadow-sm"
+        width={2981}
+        height={3644}
+        className="mix-blend-multiply w-auto max-w-full max-h-[88svh] h-auto object-contain"
         priority
       />
-
-      {/* Convite text — calligraphy image from invitation */}
-      <Image
-        src="/inv/Textos-03.png"
-        alt="Convida para celebrar sua Formatura em Direito"
-        width={3922}
-        height={987}
-        className="mix-blend-multiply w-full max-w-[300px] md:max-w-[480px] h-auto"
-      />
-
-      {/* Date / time / location */}
-      <div className="flex flex-col items-center gap-3">
-        <Image
-          src="/inv/Textos-04.png"
-          alt="19 de setembro de 2026, às 19:30"
-          width={3017}
-          height={799}
-          className="mix-blend-multiply w-full max-w-[280px] md:max-w-[420px] h-auto"
-        />
-        <p className="label-caps text-ink-light" style={{ fontSize: "0.65rem", letterSpacing: "0.18em" }}>
-          {t.hero.locationLabel}
-        </p>
-      </div>
-
     </section>
   );
 }

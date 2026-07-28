@@ -8,18 +8,11 @@ export function TrajeSection() {
     <SectionReveal className="py-8">
       <div className="flex flex-col items-center gap-4 rounded-lg border border-gold/40 px-6 py-8 text-center">
         <Image
-          src="/inv/textos-dresscode.png"
-          alt="Dress Code"
-          width={3017}
-          height={799}
-          className="mix-blend-multiply w-full max-w-[220px] md:max-w-[320px] h-auto"
-        />
-        <Image
-          src="/inv/textos-trajetitulo.png"
-          alt="Traje Social Completo"
-          width={3017}
-          height={400}
-          className="mix-blend-multiply w-full max-w-[280px] md:max-w-[420px] h-auto"
+          src="/inv/dresscode-completo.png"
+          alt="Dress Code: Traje Social Completo"
+          width={2981}
+          height={1008}
+          className="mix-blend-multiply w-full max-w-[280px] md:max-w-[440px] h-auto"
         />
         <Image
           src="/inv/traje.png"
