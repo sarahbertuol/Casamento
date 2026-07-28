@@ -17,7 +17,14 @@ export function ContactSection() {
         {t.contact.description}
       </p>
       <p className="text-base font-medium text-ink">{weddingConfig.contactName}</p>
-      <p className="text-base text-ink-light">{weddingConfig.contactPhone}</p>
+      <a
+        href={`https://wa.me/${weddingConfig.rsvpWhatsapp}?text=ola%2C+sou+convidado+da+Bruna+Fagundes+e+tenho+uma+d%C3%BAvida`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-base text-ink-light hover:text-wine transition-colors"
+      >
+        {weddingConfig.contactPhone}
+      </a>
     </SectionReveal>
   );
 }

@@ -13,10 +13,10 @@ export const weddingConfig = {
   dressCode: "Traje Social Completo",
 
   contactName: "Fabio",
-  contactPhone: "(51) 9122-3456",
+  contactPhone: "+55 (51) 9326-6605",
 
   // WhatsApp para RSVP e presentes
-  rsvpWhatsapp: "5551912234567",
+  rsvpWhatsapp: "555193266605",
 
   hotels: [
     {
@@ -96,7 +96,7 @@ export const weddingConfig = {
   giftsLink: "{{LINK_PRESENTES}}",
 
   // PIX Copia e Cola — substitua pela chave PIX real
-  pixKey: "{{PIX_KEY}}",
+  pixKey: "03058233027",
   pixMerchantName: "Bruna Fagundes",
   pixMerchantCity: "Porto Alegre",
 
