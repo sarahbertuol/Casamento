@@ -14,7 +14,7 @@ export function GiftSection() {
   const handleGiftClick = (gift: (typeof weddingConfig.gifts)[number]) => {
     const code = generatePixCode(
       weddingConfig.pixKey,
-      gift.price,
+      null,
       weddingConfig.pixMerchantName,
       weddingConfig.pixMerchantCity
     );
@@ -23,8 +23,6 @@ export function GiftSection() {
       setTimeout(() => setCopiedName(null), 3000);
     });
   };
-
-  const copiedGift = weddingConfig.gifts.find((g) => g.name === copiedName);
 
   return (
     <SectionReveal className="flex flex-col items-center gap-6 py-14 text-center">
@@ -39,7 +37,7 @@ export function GiftSection() {
 
       {copiedName && (
         <div className="w-full rounded-lg border border-wine/30 bg-wine/10 px-4 py-3 text-sm text-wine">
-          ✓ PIX copiado! Cole no app do banco — R$ {copiedGift?.price.toLocaleString("pt-BR")}
+          ✓ PIX copiado! Cole no app do banco e informe o valor.
         </div>
       )}
 
@@ -66,8 +64,9 @@ export function GiftSection() {
               </div>
               <p className="text-xs font-semibold text-ink leading-tight">{gift.name}</p>
               <p className="text-[0.6rem] italic text-ink-light leading-tight">{gift.tagline}</p>
+              <p className="text-[0.6rem] text-ink-light mt-1">{`R$ ${gift.price.toLocaleString("pt-BR")}`}</p>
               <p className="label-caps mt-auto text-[0.7rem] text-wine">
-                {isCopied ? "✓ Copiado!" : `R$ ${gift.price.toLocaleString("pt-BR")}`}
+                {isCopied ? "✓ PIX copiado!" : "Copiar PIX"}
               </p>
             </button>
           );

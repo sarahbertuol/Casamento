@@ -16,7 +16,7 @@ function crc16(str: string): number {
 
 export function generatePixCode(
   key: string,
-  amount: number,
+  amount: number | null,
   merchantName: string,
   merchantCity: string
 ): string {
@@ -30,7 +30,7 @@ export function generatePixCode(
     field("26", merchantAccountInfo) +
     field("52", "0000") +
     field("53", "986") +
-    field("54", amount.toFixed(2)) +
+    (amount !== null ? field("54", amount.toFixed(2)) : "") +
     field("58", "BR") +
     field("59", merchantName.slice(0, 25)) +
     field("60", merchantCity.slice(0, 15)) +
