@@ -18,7 +18,7 @@ export default function Home() {
       <Countdown />
       <div className="flex justify-center pt-2 pb-4">
         <Image
-          src="/inv/ilustracao-festa.png"
+          src="/inv/ilustracao-festa2.png"
           alt=""
           width={1142}
           height={706}
