@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Hero } from "@/components/Hero";
 import { WelcomeMessage } from "@/components/WelcomeMessage";
 import { Countdown } from "@/components/Countdown";
@@ -15,6 +16,15 @@ export default function Home() {
       <Hero />
       <WelcomeMessage />
       <Countdown />
+      <div className="flex justify-center py-6 -mx-14 md:-mx-16">
+        <Image
+          src="/inv/ilustracao-festa.jpg"
+          alt=""
+          width={1134}
+          height={736}
+          className="w-full h-auto"
+        />
+      </div>
       <EventCard />
       <TrajeSection />
       <GettingThere />
