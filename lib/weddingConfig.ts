@@ -12,7 +12,7 @@ export const weddingConfig = {
   venueWazeUrl: "https://waze.com/ul?q=Av.+das+Indústrias,+1395,+Porto+Alegre",
   dressCode: "Traje Social Completo",
 
-  contactName: "Fabio",
+  contactName: "GB Eventos",
   contactPhone: "+55 (51) 9326-6605",
 
   // WhatsApp para RSVP e presentes
