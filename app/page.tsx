@@ -18,10 +18,10 @@ export default function Home() {
       <Countdown />
       <div className="flex justify-center pt-2 pb-4">
         <Image
-          src="/inv/ilustracao-festa.jpg"
+          src="/inv/ilustracao-festa.png"
           alt=""
-          width={1130}
-          height={710}
+          width={1142}
+          height={706}
           className="w-full h-auto mix-blend-multiply"
         />
       </div>
