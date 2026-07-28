@@ -16,13 +16,13 @@ export default function Home() {
       <Hero />
       <WelcomeMessage />
       <Countdown />
-      <div className="flex justify-center pt-2 pb-4">
+      <div className="flex justify-center pb-4 -mt-2">
         <Image
           src="/inv/ilustracao-festa2.png"
           alt=""
           width={1142}
           height={706}
-          className="w-full h-auto mix-blend-multiply"
+          className="w-[130%] -mx-[15%] h-auto mix-blend-multiply"
         />
       </div>
       <EventCard />
